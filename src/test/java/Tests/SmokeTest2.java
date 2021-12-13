@@ -11,7 +11,7 @@ public class SmokeTest2 {
     static String URL = "http://13gp.by/informatsiya/meditsinskie-kalkulyatory/995-raschet-skorosti-klubochkovoj-filtratsii-skf";
 
     @Test
-    public void calcSkf(){
+    public void calcSkf() {
 
         String creatinineValue = "80";
         String ageValue = "38";
@@ -67,7 +67,6 @@ public class SmokeTest2 {
 
 
         driver.quit();
-
 
 
     }
