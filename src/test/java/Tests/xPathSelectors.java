@@ -2,6 +2,7 @@ package Tests;
 
 public class xPathSelectors {
 
+    //Переходим по ссылке - https://masterskayapola.ru/
 
     //1.
     private static String absolutePath1 = "/html/body/div";
