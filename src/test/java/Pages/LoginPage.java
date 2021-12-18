@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
+
     // Описание элементов страницы
     private By PAGE_OPENED_IDENTIFIER = By.className("logo-loginpage");
 
@@ -27,7 +28,7 @@ public class LoginPage extends BasePage {
         return super.isPageOpened(PAGE_OPENED_IDENTIFIER);
     }
 
-    // Реализация гетерров элементов
+    // Реализация геттеров элементов
     public WebElement getEmailField() {
         return driver.findElement(email_Selector);
     }
@@ -42,9 +43,9 @@ public class LoginPage extends BasePage {
 
     // Реализаци базовых методов
     public void login(String username, String password) {
-     getEmailField().sendKeys(ReadProperties.getUsername());
-    getPasswordField().sendKeys(ReadProperties.getPassword());
-    getLoginButton().click();
+        getEmailField().sendKeys(ReadProperties.getUsername());
+        getPasswordField().sendKeys(ReadProperties.getPassword());
+        getLoginButton().click();
     }
 
 }
