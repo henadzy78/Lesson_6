@@ -8,13 +8,18 @@ import org.testng.annotations.Test;
 public class SmokeTest extends BaseTest {
 
     @Test
-    public void loginTest(){
+    public void loginTest() {
         LoginPage loginPage = new LoginPage(driver);
+
         loginPage.getEmailField().sendKeys(ReadProperties.getUsername());
         loginPage.getPasswordField().sendKeys(ReadProperties.getPassword());
         loginPage.getLoginButton().click();
-
     }
 
+    @Test
+    public void loginTest1() {
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login(ReadProperties.getUsername(), ReadProperties.getPassword());
+    }
 
 }

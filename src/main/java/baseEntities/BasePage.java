@@ -11,7 +11,6 @@ public class BasePage {
         this.driver = driver;
     }
 
-
     public boolean isPageOpened(By by) {
         try {
             return driver.findElement(by).isDisplayed();
