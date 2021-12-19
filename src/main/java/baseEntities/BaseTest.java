@@ -28,7 +28,6 @@ public class BaseTest {
 
         driver = new ChromeDriver(chromeOptions);
 
-        driver.get(ReadProperties.getUrl());
         //break;
         //case "opera":
         //WebDriverManager.getInstance(DriverManagerType.OPERA).setup();
@@ -39,12 +38,12 @@ public class BaseTest {
         //break;
 
     driver.manage().window().maximize();
+        driver.get(ReadProperties.getUrl());
     }
-
-    @AfterMethod
+   @AfterMethod
     public void tearDown() {
         driver.quit();
-    }
+   }
 }
 
 

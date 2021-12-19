@@ -5,6 +5,7 @@ import core.ReadProperties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 public class AddProjectPage extends BasePage {
 
@@ -40,11 +41,5 @@ public class AddProjectPage extends BasePage {
         getRadiobuttonField().click();
         getAddProjectButton().click();
     }
-
-
-
-
-
-
 
 }
