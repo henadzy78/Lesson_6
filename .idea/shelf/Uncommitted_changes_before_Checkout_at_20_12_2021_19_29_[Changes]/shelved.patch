@@ -1,0 +1,36 @@
+Index: src/test/java/Tests/SmokeTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Tests;\r\n\r\nimport Pages.AddProjectPage;\r\nimport Pages.DashboardPage;\r\nimport Pages.LoginPage;\r\nimport baseEntities.BaseTest;\r\nimport core.ReadProperties;\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.WebElement;\r\nimport org.testng.Assert;\r\nimport org.testng.annotations.Test;\r\n\r\npublic class SmokeTest extends BaseTest {\r\n\r\n    //@Test\r\n    //public void loginTest() {\r\n       // LoginPage loginPage = new LoginPage(driver);\r\n        //loginPage.login(ReadProperties.getUsername(), ReadProperties.getPassword());\r\n\r\n        //loginPage.getEmailField().sendKeys(ReadProperties.getUsername());\r\n        //loginPage.getPasswordField().sendKeys(ReadProperties.getPassword());\r\n        //loginPage.getLoginButton().click();\r\n    //}\r\n\r\n    @Test\r\n    public void projectTest(){\r\n        LoginPage loginPage = new LoginPage(driver);\r\n        loginPage.login(ReadProperties.getUsername(), ReadProperties.getPassword());\r\n\r\n        DashboardPage dashboardPage = new DashboardPage(driver);\r\n        dashboardPage.startProject();\r\n    }\r\n    @Test\r\n    public void addProjectTest(){\r\n        String expectedMsg = \"Successfully added the new project.\";\r\n        LoginPage loginPage = new LoginPage(driver);\r\n        loginPage.login(ReadProperties.getUsername(), ReadProperties.getPassword());\r\n\r\n        AddProjectPage addProjectPage = new AddProjectPage(driver);\r\n        addProjectPage.startAddProject();\r\n        addProjectPage.createProject(ReadProperties.getName(), ReadProperties.getAnnouncement());\r\n        WebElement resultMsg = driver.findElement(By.xpath(\"//div[@class='message message-success']\"));\r\n        String actualMsg = resultMsg.getAttribute(\"innerText\");\r\n        Assert.assertEquals(actualMsg, expectedMsg, \"Проект не создан\");\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/Tests/SmokeTest.java b/src/test/java/Tests/SmokeTest.java
+--- a/src/test/java/Tests/SmokeTest.java	
++++ b/src/test/java/Tests/SmokeTest.java	
+@@ -40,7 +40,7 @@
+         addProjectPage.startAddProject();
+         addProjectPage.createProject(ReadProperties.getName(), ReadProperties.getAnnouncement());
+         WebElement resultMsg = driver.findElement(By.xpath("//div[@class='message message-success']"));
+-        String actualMsg = resultMsg.getAttribute("innerText");
+-        Assert.assertEquals(actualMsg, expectedMsg, "Проект не создан");
++        //String actualMsg = resultMsg.getAttribute("innerText");
++        Assert.assertEquals(resultMsg.getAttribute("innerText"), expectedMsg, "Проект не создан");
+     }
+ }
+Index: src/test/java/Pages/AddProjectPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Pages;\r\n\r\nimport baseEntities.BasePage;\r\nimport core.ReadProperties;\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.WebDriver;\r\nimport org.openqa.selenium.WebElement;\r\nimport org.testng.Assert;\r\n\r\npublic class AddProjectPage extends BasePage {\r\n\r\n    //Описание элементов страницы\r\n    private By PAGE_OPENED_IDENTIFIER = By.id(\"sidebar-projects-add\");\r\n\r\n    private By addProject_Selector = By.id(\"sidebar-projects-add\");\r\n    private By name_Selector = By.id(\"name\");\r\n    private By announcement_Selector = By.id(\"announcement\");\r\n    private By radiobutton_Selector = By.id(\"suite_mode_multi\");\r\n    private By addProjectButton_Selector = By.id(\"accept\");\r\n\r\n    //Конструктор страницы\r\n    public AddProjectPage(WebDriver driver) {\r\n        super(driver);\r\n    }\r\n    public boolean isPageOpened() {\r\n        return super.isPageOpened(PAGE_OPENED_IDENTIFIER);\r\n    }\r\n\r\n    //Реализация геттеров элементов\r\n    public WebElement getAddProjectField(){return driver.findElement(addProject_Selector);}\r\n    public WebElement getNameField(){return driver.findElement(name_Selector);}\r\n    public WebElement getAnnouncementField(){return driver.findElement(announcement_Selector);}\r\n    public WebElement getRadiobuttonField(){return driver.findElement(radiobutton_Selector);}\r\n    public WebElement getAddProjectButton(){return driver.findElement(addProjectButton_Selector);}\r\n\r\n    //Реализация базовых методов\r\n    public void startAddProject(){getAddProjectField().click();}\r\n    public void createProject(String name, String announcement){\r\n        getNameField().sendKeys(ReadProperties.getName());\r\n        getAnnouncementField().sendKeys(ReadProperties.getAnnouncement());\r\n        getRadiobuttonField().click();\r\n        getAddProjectButton().click();\r\n    }\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/test/java/Pages/AddProjectPage.java b/src/test/java/Pages/AddProjectPage.java
+--- a/src/test/java/Pages/AddProjectPage.java	
++++ b/src/test/java/Pages/AddProjectPage.java	
+@@ -22,6 +22,7 @@
+     public AddProjectPage(WebDriver driver) {
+         super(driver);
+     }
++
+     public boolean isPageOpened() {
+         return super.isPageOpened(PAGE_OPENED_IDENTIFIER);
+     }

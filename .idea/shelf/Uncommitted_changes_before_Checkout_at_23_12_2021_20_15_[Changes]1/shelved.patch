@@ -1,0 +1,272 @@
+Index: src/main/java/Retry.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Retry.java b/src/main/java/Retry.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/Retry.java	
+@@ -0,0 +1,27 @@
++import org.testng.IRetryAnalyzer;
++import org.testng.ITestResult;
++import org.testng.internal.TestResult;
++
++public class Retry implements IRetryAnalyzer {
++    private int attempt = 1;
++    private static final int MAX_RETRY = 5;
++
++    @Override
++    public boolean retry(ITestResult iTestResult) {
++        if (!iTestResult.isSuccess()) {
++            if (attempt < MAX_RETRY) {
++                attempt++;
++                iTestResult.setStatus(TestResult.FAILURE);
++                System.out.println("Retrying one more time.");
++                return true;
++            } else {
++                iTestResult.setStatus(TestResult.FAILURE);
++            }
++        } else {
++            iTestResult.setStatus(TestResult.SUCCESS);
++        }
++        return false;
++    }
++}
++
++
+Index: src/main/java/utils/Waits.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/utils/Waits.java b/src/main/java/utils/Waits.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/utils/Waits.java	
+@@ -0,0 +1,26 @@
++package utils;
++
++import core.ReadProperties;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.support.ui.ExpectedConditions;
++import org.openqa.selenium.support.ui.WebDriverWait;
++
++public final class Waits {
++    private WebDriver driver;
++    private WebDriverWait wait;
++
++
++    public Waits(WebDriver driver, int timeOut) {
++        this.driver = driver;
++        wait = new WebDriverWait(driver, timeOut);
++    }
++
++    public void waitForVisibility(WebElement element){
++        WebDriverWait wait = new WebDriverWait(driver, timeOut);
++        wait.until(ExpectedConditions.visibilityOf(element));
++
++
++
++    }
++}
+Index: src/test/java/Tests/WaitsTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/Tests/WaitsTest.java b/src/test/java/Tests/WaitsTest.java
+new file mode 100644
+--- /dev/null	
++++ b/src/test/java/Tests/WaitsTest.java	
+@@ -0,0 +1,13 @@
++package Tests;
++
++import baseEntities.BaseTest;
++import org.testng.annotations.Test;
++
++public class WaitsTest extends BaseTest {
++
++    @Test
++    public void explicitlyTest(){
++
++    }
++
++}
+Index: src/test/resources/general.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/general.xml b/src/test/resources/general.xml
+new file mode 100644
+--- /dev/null	
++++ b/src/test/resources/general.xml	
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8" ?>
++<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
++<suite name="MainSuite">
++    <test name="Smoke">
++        <classes>
++            <class name="CalcTest"></class>
++        </classes>
++    </test>
++    <test name="Regression">
++        <classes>
++            <class name="CalcTest1"></class>
++        </classes>
++    </test>
++</suite>
+\ No newline at end of file
+Index: src/test/resources/param.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/param.xml b/src/test/resources/param.xml
+new file mode 100644
+--- /dev/null	
++++ b/src/test/resources/param.xml	
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8" ?>
++<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
++<suite name="MainSuite">
++    <parameter name="login-value" value="Test_login"></parameter>
++    <parameter name="psw-value" value="qwerty_1"></parameter>
++    <test name="Smoke">
++        <classes>
++            <class name="ParamTest"></class>
++        </classes>
++    </test>
++</suite>
+\ No newline at end of file
+Index: src/test/java/ParamTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/ParamTest.java b/src/test/java/ParamTest.java
+new file mode 100644
+--- /dev/null	
++++ b/src/test/java/ParamTest.java	
+@@ -0,0 +1,13 @@
++import org.testng.annotations.Optional;
++import org.testng.annotations.Parameters;
++import org.testng.annotations.Test;
++
++public class ParamTest {
++
++    @Parameters({"login-value","psw-value"})
++    @Test
++    public void paramTest(@Optional("Default_login") String login, @Optional("11111") String psw){
++        System.out.println("Login is:" + login);
++        System.out.println("Password is:" + psw);
++    }
++}
+Index: src/test/java/RetryTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/RetryTest.java b/src/test/java/RetryTest.java
+new file mode 100644
+--- /dev/null	
++++ b/src/test/java/RetryTest.java	
+@@ -0,0 +1,19 @@
++import org.testng.Assert;
++import org.testng.annotations.Test;
++
++public class RetryTest {
++
++    private int attempt = 1;
++
++    @Test (retryAnalyzer = Retry.class)
++    public void flakyTest(){
++        if(attempt == 4){
++            Assert.assertTrue(true);
++        }
++        else{
++            attempt++;
++            System.out.println("attempt");
++            throw new NullPointerException();
++        }
++    }
++}
+Index: src/test/resources/parallel.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/parallel.xml b/src/test/resources/parallel.xml
+new file mode 100644
+--- /dev/null	
++++ b/src/test/resources/parallel.xml	
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8" ?>
++<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
++<suite name="MainSuite" thread-count="3" parallel="methods">
++    <test name="Smoke">
++        <classes>
++            <class name="CalcTest"></class>
++            <class name="CalcTest1"></class>
++            <class name="ParamTest"></class>
++        </classes>
++    </test>
++</suite>
+Index: src/test/java/data/StaticProvider.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/data/StaticProvider.java b/src/test/java/data/StaticProvider.java
+new file mode 100644
+--- /dev/null	
++++ b/src/test/java/data/StaticProvider.java	
+@@ -0,0 +1,15 @@
++package data;
++
++import org.testng.annotations.DataProvider;
++
++public class StaticProvider {
++
++    @DataProvider (name = "dataForSum")
++    public static Object[][] dataForSumFunction(){
++        return new Object[][] {
++            {-2, -3, -5},
++            {0, 0, 0},
++            {2, 3, 5}
++        };
++    }
++}
+Index: src/test/resources/groups.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/groups.xml b/src/test/resources/groups.xml
+new file mode 100644
+--- /dev/null	
++++ b/src/test/resources/groups.xml	
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8" ?>
++<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
++<suite name="MainSuite">
++    <test name="Groups Test>">
++        <groups>
++            <define name="Group1">
++                <include name="regression"></include>
++            </define>
++            <define name="Group2">
++                <include name="sanity"></include>
++            </define>
++            <run>
++                <include name="Group1"/>
++            </run>
++        </groups>
++        <classes>
++            <class name="GroupsTest"></class>
++        </classes>
++    </test>
++</suite>
+\ No newline at end of file

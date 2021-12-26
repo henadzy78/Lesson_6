@@ -1,0 +1,94 @@
+Index: src/test/java/BaseTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.testng.annotations.*;\r\n\r\npublic class BaseTest {\r\n\r\n    @BeforeTest\r\n    public void BeforeTest(){System.out.println(\"BeforeTest\");}\r\n\r\n    @BeforeSuite\r\n    public void BeforeSuite(){System.out.println(\"BeforeSuite\");}\r\n\r\n    @BeforeGroups\r\n    public void BeforeGroups(){System.out.println(\"BeforeGroups\");}\r\n\r\n    @BeforeClass\r\n    public void BeforeClass(){System.out.println(\"BeforeClass\");}\r\n\r\n    @BeforeMethod\r\n    public void BeforeMethod(){System.out.println(\"BeforeMethod\");}\r\n\r\n    //After Annotations\r\n\r\n    @AfterTest\r\n    public void AfterTest(){System.out.println(\"AfterTest\");}\r\n\r\n    @AfterSuite\r\n    public void AfterSuite(){System.out.println(\"AfterSuite\");}\r\n\r\n    @AfterGroups\r\n    public void AfterGroups(){System.out.println(\"AfterGroups\");}\r\n\r\n    @AfterClass\r\n    public void AfterClass(){System.out.println(\"AfterClass\");}\r\n\r\n    @AfterMethod\r\n    public void AfterMethod(){System.out.println(\"AfterMethod\");}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/test/java/BaseTest.java b/src/test/java/BaseTest.java
+--- a/src/test/java/BaseTest.java	
++++ b/src/test/java/BaseTest.java	
+@@ -1,7 +1,10 @@
+ import org.testng.annotations.*;
+ 
++
++@Listeners(Listener.class)
+ public class BaseTest {
+ 
++    //Before Annotations
+     @BeforeTest
+     public void BeforeTest(){System.out.println("BeforeTest");}
+ 
+Index: src/test/java/PriorityTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.testng.Assert;\r\nimport org.testng.annotations.Test;\r\n\r\npublic class PriorityTest {\r\n\r\n    @Test (priority = 1)\r\n    public void abcTest(){\r\n        System.out.println(\"DependencyTest->abcTest\");\r\n    }\r\n\r\n    @Test(priority = 2)\r\n    public void cbaTest(){\r\n        System.out.println(\"DependencyTest->cbaTest\");\r\n    }\r\n\r\n    @Test (priority = 2)\r\n    public void bacTest(){\r\n        System.out.println(\"DependencyTest->bacTest\");\r\n    }\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/test/java/PriorityTest.java b/src/test/java/PriorityTest.java
+--- a/src/test/java/PriorityTest.java	
++++ b/src/test/java/PriorityTest.java	
+@@ -3,12 +3,12 @@
+ 
+ public class PriorityTest {
+ 
+-    @Test (priority = 1)
++    @Test (priority = 3)
+     public void abcTest(){
+         System.out.println("DependencyTest->abcTest");
+     }
+ 
+-    @Test(priority = 2)
++    @Test(priority = 1)
+     public void cbaTest(){
+         System.out.println("DependencyTest->cbaTest");
+     }
+Index: src/main/java/Calculator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Calculator {\r\n    private String title;\r\n\r\n    public Calculator(String title) {\r\n        this.title = title;\r\n    }\r\n\r\n    public int sum(int a, int b){\r\n        return a+b;\r\n    }\r\n\r\n    private String getTitle(){\r\n        return title;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/Calculator.java b/src/main/java/Calculator.java
+--- a/src/main/java/Calculator.java	
++++ b/src/main/java/Calculator.java	
+@@ -12,4 +12,5 @@
+     private String getTitle(){
+         return title;
+     }
++
+ }
+Index: src/test/java/CalcTest1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.testng.annotations.Test;\r\n\r\npublic class CalcTest1 extends BaseTest {\r\n\r\n    @Test(description = \"Test of sum in my Calculator\", groups = \"smoke\")\r\n\r\n    public void testSum(){\r\n        System.out.println(\"CalcTest1->testSum\");\r\n    }\r\n\r\n    @Test\r\n    public void testSum1(){\r\n        System.out.println(\"CalcTest1->testSum1\");\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/test/java/CalcTest1.java b/src/test/java/CalcTest1.java
+--- a/src/test/java/CalcTest1.java	
++++ b/src/test/java/CalcTest1.java	
+@@ -1,15 +1,26 @@
++import org.testng.Assert;
+ import org.testng.annotations.Test;
+ 
+ public class CalcTest1 extends BaseTest {
++    private Calculator calc = new Calculator("CalcTest1");
+ 
+     @Test(description = "Test of sum in my Calculator", groups = "smoke")
+-
+-    public void testSum(){
++    public void testSum() {
+         System.out.println("CalcTest1->testSum");
+     }
+ 
+     @Test
+-    public void testSum1(){
++    public void testSum1() {
+         System.out.println("CalcTest1->testSum1");
++        Assert.assertEquals(2, 3, 6);
+     }
++
++    @Test (dataProvider = "dataForSum, dataProviderClass = StaticProvider.class")
++    public void dataProviderTest(int a, int b, int expectedResult ){
++        Assert.assertEquals(calc.sum(a,b), expectedResult);
++
++    }
++
++
+ }
++

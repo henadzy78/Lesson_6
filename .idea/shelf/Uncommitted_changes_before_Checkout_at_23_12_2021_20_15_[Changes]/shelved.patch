@@ -1,0 +1,43 @@
+Index: src/main/java/core/ReadProperties.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package core;\r\n\r\nimport java.io.IOException;\r\nimport java.util.Properties;\r\n\r\npublic class ReadProperties {\r\n    private static Properties properties = null;\r\n    private static String filename = \"config.properties\";\r\n\r\n    static {\r\n        properties = new Properties();\r\n        try {\r\n            properties.load(ReadProperties.class.getClassLoader().getResourceAsStream(filename));\r\n        } catch (IOException e) {\r\n            e.printStackTrace();\r\n        }\r\n    }\r\n    public static String getUrl(){return properties.getProperty(\"url\");}\r\n    public static String getBrowserType(){return properties.getProperty(\"browserType\");}\r\n    public static boolean getHeadless(){return properties.getProperty(\"headless\").equalsIgnoreCase(\"true\");}\r\n    public static String getUsername(){return properties.getProperty(\"username\");}\r\n    public static String getPassword(){return properties.getProperty(\"password\");}\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/core/ReadProperties.java b/src/main/java/core/ReadProperties.java
+--- a/src/main/java/core/ReadProperties.java	
++++ b/src/main/java/core/ReadProperties.java	
+@@ -15,10 +15,29 @@
+             e.printStackTrace();
+         }
+     }
+-    public static String getUrl(){return properties.getProperty("url");}
+-    public static String getBrowserType(){return properties.getProperty("browserType");}
+-    public static boolean getHeadless(){return properties.getProperty("headless").equalsIgnoreCase("true");}
+-    public static String getUsername(){return properties.getProperty("username");}
+-    public static String getPassword(){return properties.getProperty("password");}
++
++    public static String getUrl() {
++        return properties.getProperty("url");
++    }
++
++    public static String getBrowserType() {
++        return properties.getProperty("browserType");
++    }
++
++    public static boolean getHeadless() {
++        return properties.getProperty("headless").equalsIgnoreCase("true");
++    }
++
++    public static String getUsername() {
++        return properties.getProperty("username");
++    }
+ 
++    public static String getPassword() {
++        return properties.getProperty("password");
++    }
++
++    public static int getTimeOut() {
++        return Integer.parseInt(properties.getProperty("timeout"));
++
++    }
+ }

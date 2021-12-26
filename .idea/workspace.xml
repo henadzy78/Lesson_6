@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9efc4ec1-8601-4bd4-942e-c2dd50445fe4" name="Changes" comment="Лекция TestNG" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="PageObject_Simple" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/Tests/ST.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/Tests/SmokeTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/Tests/SmokeTest2.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="21gv9twYiVz4xt5n1FiEXLqYxBy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Геннадий\IdeaProjects\lesson_6\src\test\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.SmokeTest2.calcSkf">
+    <configuration name="HW_Laminat.laminatValidationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lesson_6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.HW_Laminat" />
+      <option name="METHOD_NAME" value="laminatValidationTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ST.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lesson_6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ST" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmokeTest2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lesson_6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.SmokeTest2" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmokeTest2.calcSkf" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lesson_6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.SmokeTest2" />
+      <option name="METHOD_NAME" value="calcSkf" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmokeTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lesson_6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.SmokeTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.HW_Laminat.laminatValidationTest" />
+      <item itemvalue="TestNG.SmokeTest.test1" />
+      <item itemvalue="TestNG.SmokeTest2" />
+      <item itemvalue="TestNG.SmokeTest2.calcSkf" />
+      <item itemvalue="TestNG.ST.test1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.SmokeTest.test1" />
+        <item itemvalue="TestNG.HW_Laminat.laminatValidationTest" />
+        <item itemvalue="TestNG.ST.test1" />
+        <item itemvalue="TestNG.SmokeTest2.calcSkf" />
+        <item itemvalue="TestNG.SmokeTest2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9efc4ec1-8601-4bd4-942e-c2dd50445fe4" name="Changes" comment="" />
+      <created>1638375403149</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638375403149</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Начальное создание тестов">
+      <created>1638814338042</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638814338043</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Домашку сделал - молодец!!!">
+      <created>1638815684064</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638815684064</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Домашка по отоплению">
+      <created>1638980972609</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1638980972609</updated>
+    </task>
+    <task id="LOCAL-00004" summary="В работе">
+      <created>1638984920255</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638984920255</updated>
+    </task>
+    <task id="LOCAL-00005" summary="В работе домашка">
+      <created>1638985157510</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638985157510</updated>
+    </task>
+    <task id="LOCAL-00006" summary="В работе CSS">
+      <created>1638989423451</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638989423451</updated>
+    </task>
+    <task id="LOCAL-00007" summary="В работе ДЗ с*">
+      <created>1639150954727</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1639150954728</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Дз выполнено до CSS">
+      <created>1639216284290</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1639216284290</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ДЗ выполнено">
+      <created>1639242476262</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1639242476262</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ДЗ выполнено">
+      <created>1639242589893</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1639242589893</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ДЗ CSS закончено!">
+      <created>1639312182780</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1639312182780</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ДЗ CSS закончено!">
+      <created>1639312487579</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1639312487580</updated>
+    </task>
+    <task id="LOCAL-00013" summary="xPath лекция в работе">
+      <created>1639418494747</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1639418494748</updated>
+    </task>
+    <task id="LOCAL-00014" summary="xPath лекция закончена">
+      <created>1639570703790</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1639570703791</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Архитектура приложения лекция">
+      <created>1639590429926</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1639590429926</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Page Object лекция">
+      <created>1639645576981</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1639645576981</updated>
+    </task>
+    <task id="LOCAL-00017" summary="xPath лекция с выполненным ДЗ-готово.">
+      <created>1639725674492</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1639725674492</updated>
+    </task>
+    <task id="LOCAL-00018" summary="xPathSelectors лекция">
+      <created>1639726749099</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1639726749099</updated>
+    </task>
+    <task id="LOCAL-00019" summary="xPathSelectors-ДЗ">
+      <created>1639726913256</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1639726913256</updated>
+    </task>
+    <task id="LOCAL-00020" summary="xPathSelectors-ДЗ">
+      <created>1639727050215</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1639727050215</updated>
+    </task>
+    <task id="LOCAL-00021" summary="xPathSelectors-ДЗ готово">
+      <created>1639727221839</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1639727221839</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Page Object-лекция">
+      <created>1639826621423</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1639826621424</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Page Object-ДЗ">
+      <created>1639842978033</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1639842978033</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Page Object-ДЗ выполнено">
+      <created>1639850636327</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1639850636327</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Почистил">
+      <created>1640018110173</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1640018110173</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Лекция jUnit">
+      <created>1640023052638</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1640023052638</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Лекция jUnit">
+      <created>1640076338394</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1640076338394</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Лекция TestNG">
+      <created>1640512148653</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1640512148653</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Домашку сделал - молодец!!!" />
+    <MESSAGE value="Домашка по отоплению" />
+    <MESSAGE value="В работе" />
+    <MESSAGE value="В работе домашка" />
+    <MESSAGE value="В работе CSS" />
+    <MESSAGE value="В работе ДЗ с*" />
+    <MESSAGE value="Дз выполнено до CSS" />
+    <MESSAGE value="ДЗ CSS  в процессе" />
+    <MESSAGE value="ДЗ выполнено" />
+    <MESSAGE value="ДЗ CSS закончено!" />
+    <MESSAGE value="xPath лекция в работе" />
+    <MESSAGE value="xPath лекция закончена" />
+    <MESSAGE value="Архитектура приложения лекция" />
+    <MESSAGE value="Page Object лекция" />
+    <MESSAGE value="xPath лекция с выполненным ДЗ-готово." />
+    <MESSAGE value="xPathSelectors лекция" />
+    <MESSAGE value="xPathSelectors-ДЗ" />
+    <MESSAGE value="xPathSelectors-ДЗ готово" />
+    <MESSAGE value="Page Object-лекция" />
+    <MESSAGE value="Page Object-ДЗ" />
+    <MESSAGE value="Page Object-ДЗ выполнено" />
+    <MESSAGE value="Лекция jUnit" />
+    <MESSAGE value="Лекция testNG" />
+    <MESSAGE value="Почистил" />
+    <MESSAGE value="Лекция TestNG" />
+    <option name="LAST_COMMIT_MESSAGE" value="Лекция TestNG" />
+  </component>
+</project>

@@ -1,0 +1,48 @@
+Index: src/test/java/Tests/CssSelectors.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Tests;\r\n\r\nimport org.openqa.selenium.By;\r\n\r\npublic class CssSelectors {\r\n\r\n    private void cssSelectors(){\r\n        By classSelector = By.cssSelector(\".radio\"); // Поиск по классу radio\r\n        By classSelector1 = By.className(\".radio\"); // Поиск по классу radio\r\n\r\n        By idSelector = By.cssSelector(\"#suite_mode_single\"); //Поиск по id\r\n        By idSelector1 = By.id(\"#suite_mode_single\"); //Поиск по id\r\n\r\n        By tagSelector = By.cssSelector(\"label\"); //Поиск по tag\r\n        By tagSelector1 = By.tagName(\"label\"); //Поиск по tag\r\n\r\n        By tagAttributeSelector = By.cssSelector(\"label[for='name']\"); //Поиск по tag и атрибуту с значениями\r\n        By tagAttributeSelector1 = By.cssSelector(\"label[for]\"); //Поиск по tag и присутствием атрибута\r\n\r\n        By multipleClassesSelector = By.cssSelector(\".column.overflow-content\"); //Поиск по двум классам в элементе\r\n\r\n        By simpleHierarchicalSelector = By.cssSelector(\".table .content-inner\"); //Поиск простого дочернего элемента\r\n\r\n        By fullHierarchicalSelector = By.cssSelector(\"body .table .content-inner\"); //Использование трехуровненвой иерархии для поиска дочернего элемента\r\n\r\n        By searchLikeContainsSelector = By.cssSelector(\"form[action*='admin']\"); //Поиск c вхождением подстроки в значении аттрибута\r\n\r\n        By searchByWordSelector = By.cssSelector(\"form[action~='admin']\"); //Поиск с вхождением слова в значчении аттрибута\r\n\r\n        By valueStartsFromSelector = By.cssSelector(\"a[href^='https://']\"); //Поиск элемента с аттрибутом значение которго начинается со значения указанного\r\n\r\n        By valueEndsWithSelector = By.cssSelector(\"a[href$='@gmail.com']\"); // Поиск элемента с аттрибутом значение которго заканчивается на\r\n\r\n        By childRightAfterParentSelector = By.cssSelector(\"ul>li\"); //Поиск дочернего li у которого родитель ul\r\n\r\n        By elementRightAfterElementSelector = By.cssSelector(\"#form+script\"); //Поиск элемента script который идет сразу после элемента #form\r\n\r\n        By elementOnTheSameLevelSelector = By.cssSelector(\"#form~script\"); //Поиск элементов script которым предшевствует элемент #form\r\n\r\n        By firstChildSelector = By.cssSelector(\"li:first-child\"); //Поиск первого дочернего элемента\r\n\r\n        By lastChildSelector = By.cssSelector(\"li:last-child\"); //Поиск последнего дочернего элемента\r\n\r\n        By nthChildFromBeginSelector = By.cssSelector(\"li:nth-child(2)\"); //Поиск н-го дочернего элемента с начала\r\n\r\n        By nthChildFromEndSelector = By.cssSelector(\"li:nth-last-child(3)\"); //Поиск н-го дочернего элемента с конца\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    }\r\n}\r\n\r\n
+===================================================================
+diff --git a/src/test/java/Tests/CssSelectors.java b/src/test/java/Tests/CssSelectors.java
+--- a/src/test/java/Tests/CssSelectors.java	
++++ b/src/test/java/Tests/CssSelectors.java	
+@@ -25,7 +25,7 @@
+ 
+         By searchLikeContainsSelector = By.cssSelector("form[action*='admin']"); //Поиск c вхождением подстроки в значении аттрибута
+ 
+-        By searchByWordSelector = By.cssSelector("form[action~='admin']"); //Поиск с вхождением слова в значчении аттрибута
++        By searchByWordSelector = By.cssSelector("form[action~='admin']"); //Поиск с вхождением слова в значении аттрибута
+ 
+         By valueStartsFromSelector = By.cssSelector("a[href^='https://']"); //Поиск элемента с аттрибутом значение которго начинается со значения указанного
+ 
+@@ -47,6 +47,30 @@
+ 
+ 
+ 
++        By classSelector2 = By.cssSelector(".calc-btn"); // Поиск по классу calc-btn
++        By idSelector2 = By.cssSelector("#ln_room_id"); // Поиск по id
++        By tagAttributeSelector2 = By.cssSelector("label[for='direction-laminate-id1']"); //Поиск по tag и аттрибуту с значением
++        By multipleClassesSelector1 = By.cssSelector(".t3-sidebar.t3-sidebar-left.col-md-pull-9"); //Поиск по трем классам в элементе
++        By simpleHierarchicalSelector1 = By.cssSelector(".calc-btn-div .calc-btn"); //Поиск простого дочернего элемента
++        By fullHierarchicalSelector1 = By.cssSelector("body .calc-btn-div .calc-btn"); //Использование трехуровненой иерархии для поиска дочернего элемента
++        By searchLikeContainsSelector1 = By.cssSelector("????"); //Поиск c вхождением подстроки в значении аттрибута,что-то не нашел....
++        By searchByWordSelector1 = By.cssSelector("div[class~='t3-sidebar']"); //Поиск с вхождением слова в значении аттрибута
++        By valueStartsFromSelector1 = By.cssSelector("a[href^='http://']"); //Поиск элемента с аттрибутом значение которого начинается с
++        By valueEndsWithSelector1 = By.cssSelector("a[href$='gQeIgRGCns']"); // Поиск элемента с аттрибутом значение которого заканчивается на
++        By childRightAfterParentSelector1 = By.cssSelector("ul>li"); //Поиск дочернего li у которого родитель ul. ???
++        By elementRightAfterElementSelector1 = By.cssSelector("a+ul"); //Поиск элемента ul который идет сразу после элемента a
++
++
++
++
++
++
++
++
++
++
++
++
+ 
+ 
+ 
