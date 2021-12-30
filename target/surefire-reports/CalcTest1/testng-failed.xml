@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CalcTest1]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="CalcTest1">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="testSum1"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- CalcTest1 -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [CalcTest1] -->
