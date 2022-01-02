@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9efc4ec1-8601-4bd4-942e-c2dd50445fe4" name="Changes" comment="Лекция TestNG" />
+    <list default="true" id="9efc4ec1-8601-4bd4-942e-c2dd50445fe4" name="Changes" comment="abc">
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseEntities/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseEntities/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/ReadProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Waits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SmokeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SmokeTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/chromedriver.exe" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="PageObject_Simple" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,9 +45,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/Tests/ST.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/Tests/SmokeTest.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/Tests/SmokeTest2.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="21gv9twYiVz4xt5n1FiEXLqYxBy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -158,11 +165,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SmokeTest.test1" />
-        <item itemvalue="TestNG.HW_Laminat.laminatValidationTest" />
         <item itemvalue="TestNG.ST.test1" />
         <item itemvalue="TestNG.SmokeTest2.calcSkf" />
         <item itemvalue="TestNG.SmokeTest2" />
+        <item itemvalue="TestNG.SmokeTest.test1" />
+        <item itemvalue="TestNG.HW_Laminat.laminatValidationTest" />
       </list>
     </recent_temporary>
   </component>
