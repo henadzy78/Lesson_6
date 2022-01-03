@@ -1,7 +1,9 @@
 package utils;
 
 import core.ReadProperties;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -11,11 +13,15 @@ public final class Waits {
 
     public Waits(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver, ReadProperties.)
+        wait = new WebDriverWait(driver, ReadProperties.getTimeOut());
     }
 
-    public void waitForVisibility() {
-        WebDriverWait wait = new WebDriverWait(driver, timeOut);
-        wait.until(ExpectedConditions.visibilityOf(element));
+    public Waits(WebDriver driver, int timeOut) {
+        this.driver = driver;
+        wait = new WebDriverWait(driver, timeOut);
+    }
+
+    public WebElement waitForVisibility(By by) {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 }

@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9efc4ec1-8601-4bd4-942e-c2dd50445fe4" name="Changes" comment="abc">
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseEntities/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseEntities/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/ReadProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Waits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ST.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SmokeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SmokeTest2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/chromedriver.exe" beforeDir="false" />
+    <list default="true" id="9efc4ec1-8601-4bd4-942e-c2dd50445fe4" name="Changes" comment="Лекция AdvancedActions">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/WaitsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseEntities/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseEntities/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/ReadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/ReadProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Waits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Waits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ParamTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/general.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/groups.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/param.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="PageObject_Simple" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,25 +69,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SmokeTest2.calcSkf">
-    <configuration name="HW_Laminat.laminatValidationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="lesson_6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.HW_Laminat" />
-      <option name="METHOD_NAME" value="laminatValidationTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.WaitsTest.explicitlyWait">
     <configuration name="ST.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lesson_6" />
       <extension name="coverage">
@@ -156,20 +141,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WaitsTest.explicitlyWait" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lesson_6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.WaitsTest" />
+      <option name="METHOD_NAME" value="explicitlyWait" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG.HW_Laminat.laminatValidationTest" />
+      <item itemvalue="TestNG.SmokeTest2.calcSkf" />
       <item itemvalue="TestNG.SmokeTest.test1" />
       <item itemvalue="TestNG.SmokeTest2" />
-      <item itemvalue="TestNG.SmokeTest2.calcSkf" />
       <item itemvalue="TestNG.ST.test1" />
+      <item itemvalue="TestNG.WaitsTest.explicitlyWait" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WaitsTest.explicitlyWait" />
         <item itemvalue="TestNG.ST.test1" />
         <item itemvalue="TestNG.SmokeTest2.calcSkf" />
         <item itemvalue="TestNG.SmokeTest2" />
         <item itemvalue="TestNG.SmokeTest.test1" />
-        <item itemvalue="TestNG.HW_Laminat.laminatValidationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -378,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640512148653</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Лекция AdvancedActions">
+      <created>1641131185797</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1641131185797</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -394,7 +404,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Домашку сделал - молодец!!!" />
     <MESSAGE value="Домашка по отоплению" />
     <MESSAGE value="В работе" />
     <MESSAGE value="В работе домашка" />
@@ -419,6 +428,7 @@
     <MESSAGE value="Лекция testNG" />
     <MESSAGE value="Почистил" />
     <MESSAGE value="Лекция TestNG" />
-    <option name="LAST_COMMIT_MESSAGE" value="Лекция TestNG" />
+    <MESSAGE value="Лекция AdvancedActions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Лекция AdvancedActions" />
   </component>
 </project>

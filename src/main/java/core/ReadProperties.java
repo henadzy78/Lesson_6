@@ -22,6 +22,9 @@ public class ReadProperties {
     public static String getPassword(){return properties.getProperty("password");}
     public static String getName(){return properties.getProperty("name");}
     public static String getAnnouncement(){return properties.getProperty("announcement");}
+    public static int getTimeOut() {
+        return Integer.parseInt(properties.getProperty("timeout"));
+    }
 
 
 }
