@@ -5,6 +5,7 @@ public class Calculator {
     public Calculator(String title) {
         this.title = title;
     }
+
     public int sum (int a, int b){return a+b;}
 
     public String getTitle() {
