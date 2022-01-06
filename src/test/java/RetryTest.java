@@ -7,7 +7,7 @@ public class RetryTest {
 
     @Test (retryAnalyzer = Retry.class)
     public void flakyTest(){
-        if(attempt == 4){
+        if(attempt == 7){
             Assert.assertTrue(true);
         }else{
             attempt++;

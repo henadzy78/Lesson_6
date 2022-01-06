@@ -8,6 +8,12 @@ public class Calculator {
 
     public int sum (int a, int b){return a+b;}
 
+    public int dif (int a, int b){return a-b;}
+
+    public int multiplication (int a, int b){return a*b;}
+
+    public int division (int a, int b){return a/b;}
+
     public String getTitle() {
         return title;
     }

@@ -4,12 +4,13 @@ import org.testng.annotations.DataProvider;
 
 public class StaticProvider {
 
-    @DataProvider (name = "dataForSum")
-    public static Object[][] dateForSumFunction(){
+    @DataProvider (name = "dataForDiff")
+    public static Object[][] dateForDiffFunction(){
         return new Object[][]{
-                {-2, -3, -5},
-                {0, 0, 0},
-                {2, 3, 5}
+                {12, -34, 46},
+                {6, 9, -3},
+                {21, 3, 18},
+                {2, -3, 5}
         };
     }
 }
