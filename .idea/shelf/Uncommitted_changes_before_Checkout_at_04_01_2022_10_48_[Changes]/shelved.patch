@@ -1,0 +1,199 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"9efc4ec1-8601-4bd4-942e-c2dd50445fe4\" name=\"Changes\" comment=\"Лекция AdvancedActions\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/tests/WaitsTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/pom.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/baseEntities/BaseTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/baseEntities/BaseTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/core/ReadProperties.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/core/ReadProperties.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/utils/Waits.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/utils/Waits.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/config.properties\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/config.properties\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/ParamTest.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/general.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/groups.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/parallel.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/param.xml\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"PageObject_Simple\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/pom.xml\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"21gv9twYiVz4xt5n1FiEXLqYxBy\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/src/test/resources\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"reference.settings.project.maven.repository.indices\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Геннадий\\IdeaProjects\\lesson_6\\src\\test\\resources\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"TestNG.WaitsTest.explicitlyWait\">\r\n    <configuration name=\"ST.test1\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"lesson_6\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.ST\" />\r\n      <option name=\"METHOD_NAME\" value=\"test1\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SmokeTest2\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"lesson_6\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.SmokeTest2\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SmokeTest2.calcSkf\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"lesson_6\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.SmokeTest2\" />\r\n      <option name=\"METHOD_NAME\" value=\"calcSkf\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SmokeTest.test1\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"lesson_6\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.SmokeTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"test1\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"WaitsTest.explicitlyWait\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"lesson_6\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"tests.WaitsTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"explicitlyWait\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"TestNG.SmokeTest2.calcSkf\" />\r\n      <item itemvalue=\"TestNG.SmokeTest.test1\" />\r\n      <item itemvalue=\"TestNG.SmokeTest2\" />\r\n      <item itemvalue=\"TestNG.ST.test1\" />\r\n      <item itemvalue=\"TestNG.WaitsTest.explicitlyWait\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.WaitsTest.explicitlyWait\" />\r\n        <item itemvalue=\"TestNG.ST.test1\" />\r\n        <item itemvalue=\"TestNG.SmokeTest2.calcSkf\" />\r\n        <item itemvalue=\"TestNG.SmokeTest2\" />\r\n        <item itemvalue=\"TestNG.SmokeTest.test1\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"9efc4ec1-8601-4bd4-942e-c2dd50445fe4\" name=\"Changes\" comment=\"\" />\r\n      <created>1638375403149</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1638375403149</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Начальное создание тестов\">\r\n      <created>1638814338042</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638814338043</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Домашку сделал - молодец!!!\">\r\n      <created>1638815684064</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638815684064</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Домашка по отоплению\">\r\n      <created>1638980972609</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638980972609</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"В работе\">\r\n      <created>1638984920255</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638984920255</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"В работе домашка\">\r\n      <created>1638985157510</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638985157510</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"В работе CSS\">\r\n      <created>1638989423451</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638989423451</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"В работе ДЗ с*\">\r\n      <created>1639150954727</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639150954728</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Дз выполнено до CSS\">\r\n      <created>1639216284290</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639216284290</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"ДЗ выполнено\">\r\n      <created>1639242476262</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639242476262</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"ДЗ выполнено\">\r\n      <created>1639242589893</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639242589893</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"ДЗ CSS закончено!\">\r\n      <created>1639312182780</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639312182780</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"ДЗ CSS закончено!\">\r\n      <created>1639312487579</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639312487580</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"xPath лекция в работе\">\r\n      <created>1639418494747</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639418494748</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"xPath лекция закончена\">\r\n      <created>1639570703790</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639570703791</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"Архитектура приложения лекция\">\r\n      <created>1639590429926</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639590429926</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Page Object лекция\">\r\n      <created>1639645576981</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639645576981</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"xPath лекция с выполненным ДЗ-готово.\">\r\n      <created>1639725674492</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639725674492</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"xPathSelectors лекция\">\r\n      <created>1639726749099</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639726749099</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"xPathSelectors-ДЗ\">\r\n      <created>1639726913256</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639726913256</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"xPathSelectors-ДЗ\">\r\n      <created>1639727050215</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639727050215</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"xPathSelectors-ДЗ готово\">\r\n      <created>1639727221839</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639727221839</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"Page Object-лекция\">\r\n      <created>1639826621423</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639826621424</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00023\" summary=\"Page Object-ДЗ\">\r\n      <created>1639842978033</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639842978033</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00024\" summary=\"Page Object-ДЗ выполнено\">\r\n      <created>1639850636327</created>\r\n      <option name=\"number\" value=\"00024\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639850636327</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00025\" summary=\"Почистил\">\r\n      <created>1640018110173</created>\r\n      <option name=\"number\" value=\"00025\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1640018110173</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00026\" summary=\"Лекция jUnit\">\r\n      <created>1640023052638</created>\r\n      <option name=\"number\" value=\"00026\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1640023052638</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00027\" summary=\"Лекция jUnit\">\r\n      <created>1640076338394</created>\r\n      <option name=\"number\" value=\"00027\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1640076338394</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00028\" summary=\"Лекция TestNG\">\r\n      <created>1640512148653</created>\r\n      <option name=\"number\" value=\"00028\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1640512148653</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00029\" summary=\"Лекция AdvancedActions\">\r\n      <created>1641131185797</created>\r\n      <option name=\"number\" value=\"00029\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1641131185797</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"30\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Домашка по отоплению\" />\r\n    <MESSAGE value=\"В работе\" />\r\n    <MESSAGE value=\"В работе домашка\" />\r\n    <MESSAGE value=\"В работе CSS\" />\r\n    <MESSAGE value=\"В работе ДЗ с*\" />\r\n    <MESSAGE value=\"Дз выполнено до CSS\" />\r\n    <MESSAGE value=\"ДЗ CSS  в процессе\" />\r\n    <MESSAGE value=\"ДЗ выполнено\" />\r\n    <MESSAGE value=\"ДЗ CSS закончено!\" />\r\n    <MESSAGE value=\"xPath лекция в работе\" />\r\n    <MESSAGE value=\"xPath лекция закончена\" />\r\n    <MESSAGE value=\"Архитектура приложения лекция\" />\r\n    <MESSAGE value=\"Page Object лекция\" />\r\n    <MESSAGE value=\"xPath лекция с выполненным ДЗ-готово.\" />\r\n    <MESSAGE value=\"xPathSelectors лекция\" />\r\n    <MESSAGE value=\"xPathSelectors-ДЗ\" />\r\n    <MESSAGE value=\"xPathSelectors-ДЗ готово\" />\r\n    <MESSAGE value=\"Page Object-лекция\" />\r\n    <MESSAGE value=\"Page Object-ДЗ\" />\r\n    <MESSAGE value=\"Page Object-ДЗ выполнено\" />\r\n    <MESSAGE value=\"Лекция jUnit\" />\r\n    <MESSAGE value=\"Лекция testNG\" />\r\n    <MESSAGE value=\"Почистил\" />\r\n    <MESSAGE value=\"Лекция TestNG\" />\r\n    <MESSAGE value=\"Лекция AdvancedActions\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Лекция AdvancedActions\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,18 +5,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="9efc4ec1-8601-4bd4-942e-c2dd50445fe4" name="Changes" comment="Лекция AdvancedActions">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/WaitsTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/baseEntities/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseEntities/BaseTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/core/ReadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/ReadProperties.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Waits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Waits.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/ParamTest.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/general.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/groups.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/param.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/lesson_6.iml" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -33,7 +22,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="PageObject_Simple" />
++        <entry key="$PROJECT_DIR$" value="AdvancedActions" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -69,71 +58,43 @@
+       <recent name="" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="TestNG.WaitsTest.explicitlyWait">
+-    <configuration name="ST.test1" type="TestNG" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="TestNG.C:/Users/Геннадий/IdeaProjects/lesson_6/src/test/resources/param.xml">
++    <configuration name="C:/Users/Геннадий/IdeaProjects/lesson_6/src/test/resources/general.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="lesson_6" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="Tests.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.ST" />
+-      <option name="METHOD_NAME" value="test1" />
+-      <option name="TEST_OBJECT" value="METHOD" />
++      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/general.xml" />
++      <option name="TEST_OBJECT" value="SUITE" />
+       <properties />
+       <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="SmokeTest2" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="C:/Users/Геннадий/IdeaProjects/lesson_6/src/test/resources/param.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="lesson_6" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="Tests.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.SmokeTest2" />
+-      <option name="TEST_OBJECT" value="CLASS" />
++      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/param.xml" />
++      <option name="TEST_OBJECT" value="SUITE" />
+       <properties />
+       <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="SmokeTest2.calcSkf" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="CalcTest1" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="lesson_6" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="Tests.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.SmokeTest2" />
+-      <option name="METHOD_NAME" value="calcSkf" />
+-      <option name="TEST_OBJECT" value="METHOD" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="CalcTest1" />
++      <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="SmokeTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="CalcTest1.dataProviderTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="lesson_6" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="Tests.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.SmokeTest" />
+-      <option name="METHOD_NAME" value="test1" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="CalcTest1" />
++      <option name="METHOD_NAME" value="dataProviderTest" />
+       <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+       <listeners />
+@@ -141,17 +102,11 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="WaitsTest.explicitlyWait" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="RetryTest.flakyTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="lesson_6" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="tests.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="tests" />
+-      <option name="MAIN_CLASS_NAME" value="tests.WaitsTest" />
+-      <option name="METHOD_NAME" value="explicitlyWait" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="RetryTest" />
++      <option name="METHOD_NAME" value="flakyTest" />
+       <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+       <listeners />
+@@ -160,19 +115,19 @@
+       </method>
+     </configuration>
+     <list>
+-      <item itemvalue="TestNG.SmokeTest2.calcSkf" />
+-      <item itemvalue="TestNG.SmokeTest.test1" />
+-      <item itemvalue="TestNG.SmokeTest2" />
+-      <item itemvalue="TestNG.ST.test1" />
+-      <item itemvalue="TestNG.WaitsTest.explicitlyWait" />
++      <item itemvalue="TestNG.C:/Users/Геннадий/IdeaProjects/lesson_6/src/test/resources/general.xml" />
++      <item itemvalue="TestNG.C:/Users/Геннадий/IdeaProjects/lesson_6/src/test/resources/param.xml" />
++      <item itemvalue="TestNG.CalcTest1" />
++      <item itemvalue="TestNG.CalcTest1.dataProviderTest" />
++      <item itemvalue="TestNG.RetryTest.flakyTest" />
+     </list>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="TestNG.WaitsTest.explicitlyWait" />
+-        <item itemvalue="TestNG.ST.test1" />
+-        <item itemvalue="TestNG.SmokeTest2.calcSkf" />
+-        <item itemvalue="TestNG.SmokeTest2" />
+-        <item itemvalue="TestNG.SmokeTest.test1" />
++        <item itemvalue="TestNG.RetryTest.flakyTest" />
++        <item itemvalue="TestNG.CalcTest1.dataProviderTest" />
++        <item itemvalue="TestNG.CalcTest1" />
++        <item itemvalue="TestNG.C:/Users/Геннадий/IdeaProjects/lesson_6/src/test/resources/param.xml" />
++        <item itemvalue="TestNG.C:/Users/Геннадий/IdeaProjects/lesson_6/src/test/resources/general.xml" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -388,7 +343,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1641131185797</updated>
+     </task>
+-    <option name="localTasksCounter" value="30" />
++    <task id="LOCAL-00030" summary="Лекция AdvancedActions">
++      <created>1641228172715</created>
++      <option name="number" value="00030" />
++      <option name="presentableId" value="LOCAL-00030" />
++      <option name="project" value="LOCAL" />
++      <updated>1641228172715</updated>
++    </task>
++    <task id="LOCAL-00031" summary="Лекция AdvancedActions">
++      <created>1641282104496</created>
++      <option name="number" value="00031" />
++      <option name="presentableId" value="LOCAL-00031" />
++      <option name="project" value="LOCAL" />
++      <updated>1641282104496</updated>
++    </task>
++    <option name="localTasksCounter" value="32" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">

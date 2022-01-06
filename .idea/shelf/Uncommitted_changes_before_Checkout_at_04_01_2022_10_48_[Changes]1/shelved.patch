@@ -1,0 +1,90 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>org.example</groupId>\r\n    <artifactId>lesson_6</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n\r\n    <properties>\r\n        <maven.compiler.source>17</maven.compiler.source>\r\n        <maven.compiler.target>17</maven.compiler.target>\r\n    </properties>\r\n\r\n    <dependencies>\r\n        <dependency>\r\n            <groupId>org.seleniumhq.selenium</groupId>\r\n            <artifactId>selenium-java</artifactId>\r\n            <version>3.141.59</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.testng</groupId>\r\n            <artifactId>testng</artifactId>\r\n            <version>7.1.0</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>io.github.bonigarcia</groupId>\r\n            <artifactId>webdrivermanager</artifactId>\r\n            <version>4.2.2</version>\r\n        </dependency>\r\n    </dependencies>\r\n\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	
++++ b/pom.xml	
+@@ -7,6 +7,18 @@
+     <groupId>org.example</groupId>
+     <artifactId>lesson_6</artifactId>
+     <version>1.0-SNAPSHOT</version>
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <configuration>
++                    <source>16</source>
++                    <target>16</target>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
+ 
+     <properties>
+         <maven.compiler.source>17</maven.compiler.source>
+Index: lesson_6.iml
+===================================================================
+diff --git a/lesson_6.iml b/lesson_6.iml
+deleted file mode 100644
+--- a/lesson_6.iml	
++++ /dev/null	
+@@ -1,53 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
+-    <output url="file://$MODULE_DIR$/target/classes" />
+-    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+-    <content url="file://$MODULE_DIR$">
+-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+-      <excludeFolder url="file://$MODULE_DIR$/target" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-java:3.141.59" level="project" />
+-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-api:3.141.59" level="project" />
+-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:3.141.59" level="project" />
+-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-edge-driver:3.141.59" level="project" />
+-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-firefox-driver:3.141.59" level="project" />
+-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-ie-driver:3.141.59" level="project" />
+-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-opera-driver:3.141.59" level="project" />
+-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-remote-driver:3.141.59" level="project" />
+-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-safari-driver:3.141.59" level="project" />
+-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-support:3.141.59" level="project" />
+-    <orderEntry type="library" name="Maven: net.bytebuddy:byte-buddy:1.8.15" level="project" />
+-    <orderEntry type="library" name="Maven: org.apache.commons:commons-exec:1.3" level="project" />
+-    <orderEntry type="library" name="Maven: com.google.guava:guava:25.0-jre" level="project" />
+-    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
+-    <orderEntry type="library" name="Maven: org.checkerframework:checker-compat-qual:2.0.0" level="project" />
+-    <orderEntry type="library" name="Maven: com.google.errorprone:error_prone_annotations:2.1.3" level="project" />
+-    <orderEntry type="library" name="Maven: com.google.j2objc:j2objc-annotations:1.1" level="project" />
+-    <orderEntry type="library" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
+-    <orderEntry type="library" name="Maven: com.squareup.okhttp3:okhttp:3.11.0" level="project" />
+-    <orderEntry type="library" name="Maven: com.squareup.okio:okio:1.14.0" level="project" />
+-    <orderEntry type="library" name="Maven: org.testng:testng:7.1.0" level="project" />
+-    <orderEntry type="library" name="Maven: com.beust:jcommander:1.72" level="project" />
+-    <orderEntry type="library" name="Maven: com.google.inject:guice:no_aop:4.1.0" level="project" />
+-    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
+-    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
+-    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.21" level="project" />
+-    <orderEntry type="library" name="Maven: io.github.bonigarcia:webdrivermanager:4.2.2" level="project" />
+-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
+-    <orderEntry type="library" name="Maven: commons-io:commons-io:2.8.0" level="project" />
+-    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.6" level="project" />
+-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.11" level="project" />
+-    <orderEntry type="library" name="Maven: org.apache.httpcomponents.client5:httpclient5:5.0.1" level="project" />
+-    <orderEntry type="library" name="Maven: org.apache.httpcomponents.core5:httpcore5:5.0.1" level="project" />
+-    <orderEntry type="library" name="Maven: org.apache.httpcomponents.core5:httpcore5-h2:5.0.1" level="project" />
+-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.13" level="project" />
+-    <orderEntry type="library" name="Maven: org.rauschig:jarchivelib:1.1.0" level="project" />
+-    <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.20" level="project" />
+-    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.13.1" level="project" />
+-  </component>
+-</module>
+\ No newline at end of file
