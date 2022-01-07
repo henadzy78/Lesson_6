@@ -10,18 +10,18 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
-
     protected WebDriver driver;
 
     @BeforeMethod
-    public void setUp(){
+    public void setUp() throws InterruptedException {
         WebDriverManager.getInstance(DriverManagerType.CHROME).setup();
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--disable-gpu");
         chromeOptions.addArguments("--silent");
+        chromeOptions.setHeadless(ReadProperties.getHeadless());
 
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(chromeOptions);
 
         driver.manage().window().maximize();
         driver.get(ReadProperties.getUrl());
@@ -31,5 +31,8 @@ public class BaseTest {
     public void tearDown(){
         driver.quit();
     }
+
+
+
 
 }
