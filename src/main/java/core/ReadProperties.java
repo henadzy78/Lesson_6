@@ -17,9 +17,5 @@ public class ReadProperties {
     }
 
     public static String getUrl() {return properties.getProperty("url");}
-    public static String getBrowserType() {return properties.getProperty("BrowserType");}
-    public static boolean getHeadless(){return properties.getProperty("Headless").equalsIgnoreCase("true");}
-
-
-
+    public static String getNumber() {return properties.getProperty("number");}
 }

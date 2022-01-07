@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a403242-e46a-4afc-9da6-493164ce04d0" name="Changes" comment="Домашка TestNG">
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseEntities/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DropdownPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_01_2022_10_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_01_2022_10_48__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_01_2022_10_48__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_01_2022_10_48__Changes_1.xml" afterDir="false" />
@@ -13,7 +13,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/baseEntities/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseEntities/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/core/ReadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/ReadProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/InputsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/SmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SmokeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
@@ -32,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="PageObject_Simple_HW" />
+        <entry key="$PROJECT_DIR$" value="Lesson_6_HW" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,17 +60,6 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunManager" selected="TestNG.SmokeTest">
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ST.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lesson_6" />
       <extension name="coverage">
@@ -106,7 +95,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmokeTest2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SmokeTest.dropDownTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lesson_6" />
       <extension name="coverage">
         <pattern>
@@ -114,16 +103,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.SmokeTest2" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SmokeTest" />
+      <option name="METHOD_NAME" value="dropDownTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmokeTest2.calcSkf" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SmokeTest.inputNumberTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lesson_6" />
       <extension name="coverage">
         <pattern>
@@ -131,9 +121,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.SmokeTest2" />
-      <option name="METHOD_NAME" value="calcSkf" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SmokeTest" />
+      <option name="METHOD_NAME" value="inputNumberTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -160,19 +150,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.SmokeTest2" />
-      <item itemvalue="TestNG.SmokeTest2.calcSkf" />
       <item itemvalue="TestNG.ST.test1" />
       <item itemvalue="TestNG.SmokeTest.mainTest" />
       <item itemvalue="TestNG.SmokeTest" />
+      <item itemvalue="TestNG.SmokeTest.inputNumberTest" />
+      <item itemvalue="TestNG.SmokeTest.dropDownTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.SmokeTest" />
+        <item itemvalue="TestNG.SmokeTest.dropDownTest" />
+        <item itemvalue="TestNG.SmokeTest.inputNumberTest" />
         <item itemvalue="TestNG.SmokeTest.mainTest" />
         <item itemvalue="TestNG.ST.test1" />
-        <item itemvalue="TestNG.SmokeTest2.calcSkf" />
-        <item itemvalue="TestNG.SmokeTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641476911687</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Домашка TestNG">
+      <created>1641560430399</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641560430415</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
