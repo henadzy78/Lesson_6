@@ -14,6 +14,7 @@ public class DropdownPage extends BasePage {
     private By dropDownField_Selector = By.cssSelector("select[id='dropdown']");
     private By optionField_Selector = By.xpath("//*[. = 'Option 2']");
 
+
     //Конструктор страницы
     public DropdownPage (WebDriver driver) {super(driver);}
 
@@ -25,9 +26,8 @@ public class DropdownPage extends BasePage {
     public WebElement getOptionField() {return driver.findElement(optionField_Selector);}
 
     //Реализация базовых методов
-    public void openDropDownPage() {getDropDownButton().click();}
     public void optionSelection() {
+        getDropDownButton().click();
         getDropDownField().click();
-        getOptionField().click();
-    }
+        getOptionField().click();}
 }

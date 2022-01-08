@@ -13,6 +13,7 @@ public class InputsPage extends BasePage {
     private By inputs_Selector = By.xpath("//*[contains(text(), 'Inp')]");
     private By number_Selector = By.cssSelector("input[type='number']");
 
+
     //Конструктор страницы
     public InputsPage(WebDriver driver) {
         super(driver);
@@ -25,6 +26,9 @@ public class InputsPage extends BasePage {
     public WebElement getInputsField() {return driver.findElement(number_Selector);};
 
     //Реализация базовых методов
-    public void openInputsPage() {getInputsButton().click();}
-    public void inputNumber() {getInputsField().sendKeys(ReadProperties.getNumber());}
+    public void startInputsFunction() {
+        getInputsButton().click();
+        getInputsField().sendKeys(ReadProperties.getNumber());
+    }
 }
+
