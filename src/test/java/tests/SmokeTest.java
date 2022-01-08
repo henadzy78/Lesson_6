@@ -12,9 +12,10 @@ import pages.InputsPage;
 public class SmokeTest extends BaseTest {
 
     @Test
-    public void inputNumberTest() {
+    public void inputsTest() {
         InputsPage inputsPage = new InputsPage(driver);
 
+        inputsPage.isPageOpened();
         inputsPage.startInputsFunction();
 
         String expectedInputs = "15";
@@ -27,6 +28,7 @@ public class SmokeTest extends BaseTest {
     public void dropDownTest() {
         DropdownPage dropdownPage = new DropdownPage(driver);
 
+        dropdownPage.isPageOpened();
         dropdownPage.optionSelection();
 
         String expectedOption = "Option 2";
@@ -35,9 +37,12 @@ public class SmokeTest extends BaseTest {
         Assert.assertEquals(actualOption, expectedOption, "Values are not equal");
     }
 
-    @Test
-    public void DisappearElemPageTest(){
+    @Test (priority = 2)
+    public void disappearElemTest(){
         DisappearElemPage dep = new DisappearElemPage(driver);
-        dep.openDisappearingElementsPage();
+
+        dep.isPageOpened();
+        dep.openDisappearElemPage();
+        dep.visibilityGalleryTest();
     }
 }

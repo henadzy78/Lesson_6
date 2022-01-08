@@ -9,10 +9,9 @@ import org.openqa.selenium.WebElement;
 public class InputsPage extends BasePage {
 
     //Описание элементов страницы
-    private By PAGE_OPENED_IDENTIFIER = By.className("heading");
+    private By PAGE_OPENED_IDENTIFIER = By.xpath("//*[. = 'Inputs']");
     private By inputs_Selector = By.xpath("//*[contains(text(), 'Inp')]");
     private By number_Selector = By.cssSelector("input[type='number']");
-
 
     //Конструктор страницы
     public InputsPage(WebDriver driver) {

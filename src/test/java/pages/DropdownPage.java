@@ -1,7 +1,6 @@
 package pages;
 
 import baseEntities.BasePage;
-import baseEntities.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,11 +8,10 @@ import org.openqa.selenium.WebElement;
 public class DropdownPage extends BasePage {
 
     //Описание элементов страницы
-    private By PAGE_OPENED_IDENTIFIER = By.className("heading");
+    private By PAGE_OPENED_IDENTIFIER = By.xpath("//*[. = 'Dropdown List']");
     private By dropDown_Selector = By.xpath("//*[contains(text(), 'Dropd')]");
     private By dropDownField_Selector = By.cssSelector("select[id='dropdown']");
     private By optionField_Selector = By.xpath("//*[. = 'Option 2']");
-
 
     //Конструктор страницы
     public DropdownPage (WebDriver driver) {super(driver);}
@@ -29,5 +27,6 @@ public class DropdownPage extends BasePage {
     public void optionSelection() {
         getDropDownButton().click();
         getDropDownField().click();
-        getOptionField().click();}
+        getOptionField().click();
+    }
 }

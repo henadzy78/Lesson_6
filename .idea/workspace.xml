@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a403242-e46a-4afc-9da6-493164ce04d0" name="Changes" comment="Домашка Christmas_HW">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DisappearElemPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Waits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/ReadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/ReadProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DisappearElemPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DisappearElemPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/DropdownPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DropdownPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/InputsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/InputsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/SmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SmokeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="TestNG.SmokeTest">
+  <component name="RunManager" selected="TestNG.SmokeTest.disappearElemTest">
     <configuration name="SmokeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lesson_6" />
       <extension name="coverage">
@@ -71,7 +77,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmokeTest.DisappearingElementsPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SmokeTest.DisappearElemPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lesson_6" />
       <extension name="coverage">
         <pattern>
@@ -81,7 +87,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.SmokeTest" />
-      <option name="METHOD_NAME" value="DisappearingElementsPageTest" />
+      <option name="METHOD_NAME" value="DisappearElemPageTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmokeTest.disappearElemTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lesson_6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SmokeTest" />
+      <option name="METHOD_NAME" value="disappearElemTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -107,7 +131,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmokeTest.inputNumberTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SmokeTest.inputsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lesson_6" />
       <extension name="coverage">
         <pattern>
@@ -117,25 +141,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.SmokeTest" />
-      <option name="METHOD_NAME" value="inputNumberTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SmokeTest.mainTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="lesson_6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SmokeTest" />
-      <option name="METHOD_NAME" value="mainTest" />
+      <option name="METHOD_NAME" value="inputsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -144,19 +150,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.SmokeTest.mainTest" />
       <item itemvalue="TestNG.SmokeTest" />
-      <item itemvalue="TestNG.SmokeTest.inputNumberTest" />
       <item itemvalue="TestNG.SmokeTest.dropDownTest" />
-      <item itemvalue="TestNG.SmokeTest.DisappearingElementsPageTest" />
+      <item itemvalue="TestNG.SmokeTest.DisappearElemPageTest" />
+      <item itemvalue="TestNG.SmokeTest.inputsTest" />
+      <item itemvalue="TestNG.SmokeTest.disappearElemTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SmokeTest.disappearElemTest" />
         <item itemvalue="TestNG.SmokeTest" />
+        <item itemvalue="TestNG.SmokeTest.inputsTest" />
         <item itemvalue="TestNG.SmokeTest.dropDownTest" />
-        <item itemvalue="TestNG.SmokeTest.inputNumberTest" />
-        <item itemvalue="TestNG.SmokeTest.DisappearingElementsPageTest" />
-        <item itemvalue="TestNG.SmokeTest.mainTest" />
+        <item itemvalue="TestNG.SmokeTest.DisappearElemPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641583684672</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Домашка Christmas_HW">
+      <created>1641643906973</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641643906973</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
