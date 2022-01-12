@@ -21,6 +21,10 @@ public final class Waits {
         wait = new WebDriverWait(driver, timeOut);
     }
 
+    public boolean waiForVisibility(WebElement element){
+        return wait.until(ExpectedConditions.visibilityOf(element)).isDisplayed();
+    }
+
     public WebElement waitForVisibility(By by) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }

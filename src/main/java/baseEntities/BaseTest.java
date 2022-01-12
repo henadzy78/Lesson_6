@@ -40,10 +40,10 @@ public class BaseTest {
         //break;
 
     driver.manage().timeouts().implicitlyWait(0, TimeUnit.MILLISECONDS);
-    driver.manage().window().maximize();
+    //driver.manage().window().maximize();
         driver.get(ReadProperties.getUrl());
     }
-   @AfterMethod
+   @AfterMethod ()
     public void tearDown() {
         driver.quit();
    }
