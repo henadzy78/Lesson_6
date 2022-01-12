@@ -1,5 +1,6 @@
 package Tests;
 
+import Pages.DashboardPage;
 import Pages.LoginPage;
 import baseEntities.BaseTest;
 import core.ReadProperties;
@@ -14,9 +15,11 @@ public class SmokeTest extends BaseTest {
         loginPage.getEmailField().sendKeys(ReadProperties.getUsername());
         loginPage.getPasswordField().sendKeys(ReadProperties.getPassword());
         loginPage.getLoginButton().click();
+
+        DashboardPage dashboardPage = new DashboardPage(driver);
     }
 
-    @Test
+    @Test(enabled = false)
     public void loginTest1() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login(ReadProperties.getUsername(), ReadProperties.getPassword());
