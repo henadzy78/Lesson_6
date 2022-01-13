@@ -1,7 +1,5 @@
 package Pages;
 
-//import baseEntities.BasePage;
-
 import baseEntities.BasePage;
 import core.ReadProperties;
 import org.openqa.selenium.By;
@@ -9,8 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
-
-    private static String ENDPOINT = "/auth/login/";
+    private static String ENDPOINT = "/auth/login";
     // Описание элементов страницы
     private By PAGE_OPENED_IDENTIFIER = By.className("logo-loginpage");
 

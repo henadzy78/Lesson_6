@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class DashboardPage extends BasePage {
-
     private static String ENDPOINT = "/dashboard";
 
     protected By PAGE_OPENED_IDENTIFIER = By.id("activityChart");
@@ -15,6 +14,10 @@ public class DashboardPage extends BasePage {
 
     public DashboardPage(WebDriver driver) {
         super(driver);
+    }
+
+    public DashboardPage(WebDriver driver, boolean openPageByUrl){
+        super(driver, openPageByUrl);
     }
 
     @Override

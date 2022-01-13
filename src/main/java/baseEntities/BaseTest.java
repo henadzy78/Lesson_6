@@ -1,5 +1,6 @@
 package baseEntities;
 
+import core.BrowsersService;
 import core.ReadProperties;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.config.DriverManagerType;
@@ -8,35 +9,25 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import utils.Listener;
+import utils.Waits;
 
+import java.util.concurrent.TimeUnit;
+
+@Listeners(Listener.class)
 public class BaseTest {
     protected WebDriver driver;
+    protected BrowsersService browsersService;
+    protected Waits waits;
 
     @BeforeMethod
     public void setUp() {
-        //switch (ReadProperties.getBrowserType().toLowerCase()) {
-        //case "chrome":
-        WebDriverManager.getInstance(DriverManagerType.CHROME).setup();
-
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--disable-gpu");
-        chromeOptions.addArguments("--silent");
-        //chromeOptions.addArguments("--start-maximized"); // Как вариант можно
-        chromeOptions.setHeadless(ReadProperties.getHeadless());
-
-        driver = new ChromeDriver(chromeOptions);
+        browsersService = new BrowsersService();
+        driver = browsersService.getDriver();
+        waits = new Waits(driver);
 
         driver.get(ReadProperties.getUrl());
-        //break;
-        //case "opera":
-        //WebDriverManager.getInstance(DriverManagerType.OPERA).setup();
-        //driver = new OperaDriver();
-        //break;
-        //default:
-        //System.out.println("This type of browser is not supported.");
-        //break;
-
-    driver.manage().window().maximize();
     }
 
     @AfterMethod
