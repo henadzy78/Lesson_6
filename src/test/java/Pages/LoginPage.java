@@ -2,6 +2,7 @@ package Pages;
 
 //import baseEntities.BasePage;
 
+import baseEntities.BasePage;
 import core.ReadProperties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
