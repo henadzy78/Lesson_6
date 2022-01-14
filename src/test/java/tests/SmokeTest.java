@@ -1,7 +1,5 @@
 package tests;
 
-
-//import Pages.*;
 import org.testng.Assert;
 import pages.DashboardPage;
 import baseEntities.BaseTest;
