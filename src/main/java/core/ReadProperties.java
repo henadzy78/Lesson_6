@@ -21,7 +21,7 @@ public class ReadProperties {
     }
 
     public static String getBrowserName() {
-        return properties.getProperty("browser");
+        return properties.getProperty("browserType");
     }
 
     public static String getUsername() {
