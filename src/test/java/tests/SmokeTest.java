@@ -1,8 +1,8 @@
-package Tests;
+package tests;
 
 
 //import Pages.*;
-import Pages.DashboardPage;
+import pages.DashboardPage;
 import baseEntities.BaseTest;
 import core.ReadProperties;
 import org.testng.annotations.Test;
