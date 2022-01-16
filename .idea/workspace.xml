@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a403242-e46a-4afc-9da6-493164ce04d0" name="Changes" comment="Домашка Christmas_HW">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ActionTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AlertTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FileUploadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FrameTests.java" afterDir="false" />
+    <list default="true" id="5a403242-e46a-4afc-9da6-493164ce04d0" name="Changes" comment="Лекция Fluent">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_12_2021_20_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_12_2021_20_06__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_12_2021_19_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_12_2021_19_21__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2021_19_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2021_19_29__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_12_2021_21_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_12_2021_21_05__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_12_2021_20_15__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_12_2021_20_15__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseEntities/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseEntities/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Waits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Waits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JSTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JSTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ActionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ActionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AlertTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FileUploadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FileUploadTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Christmas_HW" />
+        <entry key="$PROJECT_DIR$" value="PageObject_Advanced" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +67,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.FrameTests.frameTest">
+  <component name="RunManager" selected="TestNG.JSTests.jsTest">
     <configuration name="AlertTest.confirmAlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lesson_6" />
       <extension name="coverage">
@@ -125,25 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileUploadTest.fileUploadTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="lesson_6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.FileUploadTest" />
-      <option name="METHOD_NAME" value="fileUploadTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FrameTests.frameTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FrameTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lesson_6" />
       <extension name="coverage">
         <pattern>
@@ -153,7 +132,18 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.FrameTests" />
-      <option name="METHOD_NAME" value="frameTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JSTests.jsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lesson_6" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JSTests" />
+      <option name="METHOD_NAME" value="jsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -162,19 +152,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.FileUploadTest.fileUploadTest" />
       <item itemvalue="TestNG.AlertTest.infoAlertTest" />
-      <item itemvalue="TestNG.AlertTest.confirmAlertTest" />
       <item itemvalue="TestNG.AlertTest.promptAlertTest" />
-      <item itemvalue="TestNG.FrameTests.frameTest" />
+      <item itemvalue="TestNG.AlertTest.confirmAlertTest" />
+      <item itemvalue="TestNG.FrameTests" />
+      <item itemvalue="TestNG.JSTests.jsTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FrameTests.frameTest" />
+        <item itemvalue="TestNG.JSTests.jsTest" />
+        <item itemvalue="TestNG.FrameTests" />
         <item itemvalue="TestNG.AlertTest.promptAlertTest" />
         <item itemvalue="TestNG.AlertTest.confirmAlertTest" />
         <item itemvalue="TestNG.AlertTest.infoAlertTest" />
-        <item itemvalue="TestNG.FileUploadTest.fileUploadTest" />
       </list>
     </recent_temporary>
   </component>

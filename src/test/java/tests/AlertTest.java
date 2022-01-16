@@ -34,8 +34,9 @@ public class AlertTest extends BaseTest {
 
         Alert alert = driver.switchTo().alert();
         Assert.assertEquals(alert.getText(),"I am a JS Confirm");
-        Thread.sleep(5000);
         alert.dismiss();
+        Thread.sleep(5000);
+
     }
 
     @Test

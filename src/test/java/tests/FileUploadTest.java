@@ -23,7 +23,7 @@ public class FileUploadTest extends BaseTest {
 
         //Thread.sleep(10000);
 
-        WebElement header = waits.waitForVisibility(By.xpath("//*[. = 'File Uploaded!']"));
+        WebElement header = waits.waitForVisibility(By.xpath("//h3[. = 'File Uploaded!']"));
         WebElement fileName = waits.waitForVisibility(By.id("uploaded-files"));
 
         Assert.assertTrue(header.isDisplayed()); //Наиболее корректная проверка. Элемент отображается!
@@ -31,7 +31,5 @@ public class FileUploadTest extends BaseTest {
         //Assert.assertTrue(header != null); //Как вариант можно. Эта проверка показывает ТОЛЬКО что элемент есть
                                              // в дом-модели, но не ОБЯЗАТЕЛЬНО отображается!
         Assert.assertEquals(fileName.getText(), "Пульт.jpg");
-
-
     }
 }
