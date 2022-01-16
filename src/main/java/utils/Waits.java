@@ -28,4 +28,8 @@ public final class Waits {
     public WebElement waitForVisibility(By by) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
+
+    public boolean waitForInvisibility(WebElement element, int timeout) {
+        return wait.until(ExpectedConditions.invisibilityOf(element));
+    }
 }
