@@ -78,4 +78,5 @@ public class ActionTests extends BaseTest {
                 + "var source = arguments[0];\n" + "var destination = arguments[1];\n"
                 + "simulateHTML5DragAndDrop(source,destination);", source, destination);
     }
-}
+  }
+
