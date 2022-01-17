@@ -11,7 +11,7 @@ import utils.Retry;
 public class SmokeTest extends BaseTest {
 
     @Test
-    public void loginTest() {
+    public void loginTest() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
 
         loginPage.getEmailField().sendKeys(ReadProperties.getUsername());
@@ -22,8 +22,8 @@ public class SmokeTest extends BaseTest {
         driver.get("https://qa1504.testrail.io/index.php?/admin/overview");
 
         dashboardPage = new DashboardPage(driver, true);
-
         Assert.assertTrue(dashboardPage.getAddProjectButton().isDisplayed());
+        //Thread.sleep(5000);
     }
 
     @Test (retryAnalyzer = Retry.class)
