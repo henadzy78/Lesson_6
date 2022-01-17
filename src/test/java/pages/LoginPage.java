@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
     private static String ENDPOINT = "/auth/login";
-
     private static final By PAGE_OPENED_IDENTIFIER = By.id("button_primary");
 
     protected By emailSelector = By.id("name");

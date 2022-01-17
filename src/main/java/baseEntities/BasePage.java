@@ -23,9 +23,11 @@ public abstract class BasePage {
         if (openPageByUrl) {
             openPage();
         }
+        waitForOpen();
     }
 
     protected abstract void openPage();
+
     protected abstract boolean isPageOpened();
 
     protected void waitForOpen() {
