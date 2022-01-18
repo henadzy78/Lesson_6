@@ -2,18 +2,18 @@ package tests;
 
 import baseEntities.BaseTest;
 import core.ReadProperties;
-import org.testng.Assert;
-
-import baseEntities.BaseTest;
-import core.ReadProperties;
+import models.Project;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.DashboardPage;
 import pages.LoginPage;
+import utils.Randomization;
 import utils.Retry;
 
 public class SmokeTest extends BaseTest {
+    Project addProject;
+    Project updateProject;
 
     @Test
     public void loginTest() {
@@ -41,5 +41,16 @@ public class SmokeTest extends BaseTest {
 
         dashboardPage = new DashboardPage(driver, true);
         Assert.assertTrue(dashboardPage.getAddProjectButton().isDisplayed());
+    }
+
+
+    private void setupProjects() {
+        addProject = new Project();
+        addProject.setName(Randomization.getRandomString(8));
+        addProject.setTypeOfProject(Randomization.getRandomType());
+
+        updateProject = new Project();
+        updateProject.setName(Randomization.getRandomString(8));
+        updateProject.setTypeOfProject(Randomization.getRandomType());
     }
 }
