@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a403242-e46a-4afc-9da6-493164ce04d0" name="Changes" comment="AdvancedActions-ДЗ">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DynamicLoadingTest.java" afterDir="false" />
+    <list default="true" id="4bc06d87-8e72-4ff7-97e6-4615d76c6f97" name="Changes" comment="Лекция Steps">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ActionsTest_HW.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/JavaScriptExecutor_HW.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/WaitsTest_HW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_12_2021_20_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_12_2021_20_06__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_12_2021_19_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_12_2021_19_21__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2021_19_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2021_19_29__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_12_2021_21_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_12_2021_21_05__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_12_2021_20_15__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_12_2021_20_15__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Waits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Waits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/DynamicLoadingTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +71,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DynamicLoadingTest.waitsTest">
+  <component name="RunManager" selected="TestNG.JavaScriptExecutor_HW.javaScriptExecutorTest">
     <configuration name="ActionTests.actionTest4" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lesson_6" />
       <extension name="coverage">
@@ -79,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DynamicLoadingTest.waitsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ActionsTest_HW.actionsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lesson_6" />
       <extension name="coverage">
         <pattern>
@@ -88,8 +99,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.DynamicLoadingTest" />
-      <option name="METHOD_NAME" value="waitsTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.ActionsTest_HW" />
+      <option name="METHOD_NAME" value="actionsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -97,7 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FrameTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="JavaScriptExecutor_HW.javaScriptExecutorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lesson_6" />
       <extension name="coverage">
         <pattern>
@@ -106,19 +117,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.FrameTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JSTests.jsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="lesson_6" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JSTests" />
-      <option name="METHOD_NAME" value="jsTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.JavaScriptExecutor_HW" />
+      <option name="METHOD_NAME" value="javaScriptExecutorTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -126,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaitsTest.waitTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WaitsTest_HW.waitTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lesson_6" />
       <extension name="coverage">
         <pattern>
@@ -135,7 +135,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.WaitsTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.WaitsTest_HW" />
       <option name="METHOD_NAME" value="waitTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -144,27 +144,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WaitsTest_HW.waitsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lesson_6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.WaitsTest_HW" />
+      <option name="METHOD_NAME" value="waitsTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG.FrameTests" />
-      <item itemvalue="TestNG.JSTests.jsTest" />
-      <item itemvalue="TestNG.WaitsTest.waitTest" />
       <item itemvalue="TestNG.ActionTests.actionTest4" />
-      <item itemvalue="TestNG.DynamicLoadingTest.waitsTest" />
+      <item itemvalue="TestNG.WaitsTest_HW.waitsTest" />
+      <item itemvalue="TestNG.WaitsTest_HW.waitTest" />
+      <item itemvalue="TestNG.ActionsTest_HW.actionsTest" />
+      <item itemvalue="TestNG.JavaScriptExecutor_HW.javaScriptExecutorTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DynamicLoadingTest.waitsTest" />
+        <item itemvalue="TestNG.JavaScriptExecutor_HW.javaScriptExecutorTest" />
+        <item itemvalue="TestNG.ActionsTest_HW.actionsTest" />
+        <item itemvalue="TestNG.WaitsTest_HW.waitTest" />
+        <item itemvalue="TestNG.WaitsTest_HW.waitsTest" />
         <item itemvalue="TestNG.ActionTests.actionTest4" />
-        <item itemvalue="TestNG.WaitsTest.waitTest" />
-        <item itemvalue="TestNG.JSTests.jsTest" />
-        <item itemvalue="TestNG.FrameTests" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9efc4ec1-8601-4bd4-942e-c2dd50445fe4" name="Changes" comment="" />
+      <changelist id="4bc06d87-8e72-4ff7-97e6-4615d76c6f97" name="Changes" comment="Лекция Steps" />
       <created>1638375403149</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
