@@ -1,7 +1,7 @@
-package Tests;
+package tests;
 
-import Pages.DashboardPage;
-import Pages.LoginPage;
+import pages.DashboardPage;
+import pages.LoginPage;
 import baseEntities.BaseTest;
 import core.ReadProperties;
 import org.testng.Assert;

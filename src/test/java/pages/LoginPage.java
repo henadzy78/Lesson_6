@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import baseEntities.BasePage;
 import core.ReadProperties;
