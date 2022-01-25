@@ -1,4 +1,4 @@
-package tests;
+package tests.gui;
 
 import baseEntities.BaseTest;
 import core.ReadProperties;
@@ -17,9 +17,10 @@ public class SmokeTest extends BaseTest {
 
     @Test
     public void loginTest() {
-        User user = new User();
-                user.setEmail(ReadProperties.getUsername());
-                user.setPassword(ReadProperties.getPassword());
+        User user = User.builder()
+                .email(ReadProperties.getUsername())
+                .password(ReadProperties.getPassword())
+                .build();
 
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login(user);

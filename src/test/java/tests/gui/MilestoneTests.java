@@ -1,4 +1,4 @@
-package tests;
+package tests.gui;
 
 import baseEntities.BaseTest;
 import models.Milestone;
@@ -12,11 +12,11 @@ public class MilestoneTests extends BaseTest {
     @Test
     public void test1() {
         Project project = new Project();
-        User user = new User();
+        //User user = new User.builder();
         Milestone milestone = new Milestone();
 
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login(user);
+        //loginPage.login(user);
 
         projectSteps.addProject(project);
         milestoneSteps.createMilestone(project, milestone);
