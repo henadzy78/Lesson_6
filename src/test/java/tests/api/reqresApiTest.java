@@ -22,7 +22,7 @@ public class reqresApiTest {
         int userId = 2;
         String endpoint = "/api/users/" + userId;
 
-        // Setup Request Object
+        // Setup request Object
         RequestSpecification httpRequest = given();
 
         // Setup response Object
@@ -32,7 +32,7 @@ public class reqresApiTest {
         int statusCode = response.getStatusCode();
         System.out.println("Status Code " + statusCode);
         Assert.assertEquals(statusCode, 200);
-        Assert.assertEquals(statusCode, HttpStatus.SC_OK);
+        Assert.assertEquals(statusCode, HttpStatus.SC_OK);// тоже самое что и выше проверка
 
         // Get Response Body
         String responseBody = response.getBody().asString();
