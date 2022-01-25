@@ -62,7 +62,7 @@ public class SmokeTest extends BaseTest {
                 .build();
 
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login(user);
+        //loginPage.login(user);
 
         DashboardPage dashboardPage = new DashboardPage(driver);
         Assert.assertTrue(dashboardPage.getAddProjectButton().isDisplayed());
