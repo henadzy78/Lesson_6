@@ -36,7 +36,7 @@ public class TestRailApiTest1 extends BaseApiTest {
                 .name("Time1")
                 .announcement("This is the description for the project")
                 .isShowAnnouncement(true)
-                .typeOfProject(ProjectType.SINGLE.getProjectType())
+                 .typeOfProject(ProjectType.SINGLE.getProjectType())
                 .build();
 
         given()
