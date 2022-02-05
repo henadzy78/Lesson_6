@@ -54,7 +54,6 @@ public class TestRailApiTest1 extends BaseApiTest {
                 .post(endpoint)
                 .then().log().body()
                 .statusCode(HttpStatus.SC_OK);
-
     }
 
     @Test
@@ -137,7 +136,6 @@ public class TestRailApiTest1 extends BaseApiTest {
 
         Assert.assertEquals(response.getBody().jsonPath().get("name"),
                 projectUpd.getName());
-
     }
 
     @Test(dependsOnMethods = "updateProject")
@@ -151,6 +149,5 @@ public class TestRailApiTest1 extends BaseApiTest {
                 .then()
                 .log().body()
                 .extract().response();
-
     }
 }

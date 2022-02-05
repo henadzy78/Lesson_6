@@ -43,7 +43,6 @@ public class TestRailApiTest  extends BaseApiTest {
         // Get Response Body
         String responseBody = response.getBody().asString();
         System.out.println("Response Body: " + responseBody);
-
     }
 
     @Test
@@ -59,7 +58,5 @@ public class TestRailApiTest  extends BaseApiTest {
                 .log().status()
                 .log().body()
                 .statusCode(HttpStatus.SC_OK);
-
     }
-
 }
