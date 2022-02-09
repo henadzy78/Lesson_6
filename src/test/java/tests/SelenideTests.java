@@ -1,22 +1,17 @@
 package tests;
 
-import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import com.codeborne.selenide.testng.SoftAsserts;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import tests.pages.LoginPage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 
-import static com.codeborne.selenide.AssertionMode.SOFT;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selectors.withText;
