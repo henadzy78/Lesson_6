@@ -11,8 +11,8 @@ public class AddProjectPage {
     private final By name_Project_Selector = By.id("name");
     private final By announcement_Selector = By.id("announcement");
     private final By isShowAnnouncement_Selector = By.id("show_announcement");
-    private final By typeOfProject_Selector = By.id("suite_mode_single_baseline");
-    private final By isCompletedSelector = By.id("is_completed");                           ///!!!!
+    private final By typeOfProject_Selector = By.id("suite_mode_single");
+    private final By isCompletedSelector = By.id("is_completed");
     private final By addProject_Button_Selector = By.id("accept");
 
     public SelenideElement getNameProjectField(){return $(name_Project_Selector);}
@@ -26,7 +26,7 @@ public class AddProjectPage {
         getNameProjectField().val(project.getName());
         getAnnouncementField().val(project.getAnnouncement());
         getIsShowAnnouncementField().click();
-        getTypeOfProjectField().val(project.getTypeOfProject());
+        getTypeOfProjectField().click();
         getAddProjectButton().click();
     }
 }

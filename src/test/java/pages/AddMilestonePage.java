@@ -26,6 +26,7 @@ public class AddMilestonePage {
         getDescriptionField().val(milestone.getDescription());
         getAddMilestoneButton().click();
     }
+
     public void updateMilestone(Milestone updateMilestone){
         getNameMilestoneField().clear();
         getNameMilestoneField().val(updateMilestone.getName());

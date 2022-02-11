@@ -6,9 +6,9 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.testng.annotations.BeforeSuite;
 
 public class BaseTest {
-    String url = "https://qa1505.testrail.io";
-    String username = "atrostyanko+0401@gmail.com";
-    String password = "QqtRK9elseEfAk6ilYcJ";
+    protected String url = "https://qa1507.testrail.io";
+    protected String username = "atrostyanko+0401@gmail.com";
+    protected String password = "QqtRK9elseEfAk6ilYcJ";
 
     @BeforeSuite
     public void setupAllureReports() {
@@ -30,5 +30,4 @@ public class BaseTest {
         //Configuration.headless = false;
         //Configuration.assertionMode = SOFT;
     }
-
 }
