@@ -16,8 +16,4 @@ public class Endpoints {
     public static final String MOVE_CASES_TO_SECTION = "/index.php?/api/v2/move_cases_to_section/{section_id}";
     public static final String DELETE_CASE = "/index.php?/api/v2/delete_case/{case_id}";
     public static final String DELETE_PROJECT = "/index.php?/api/v2/delete_project/{project_id}";
-
-
-
-
 }

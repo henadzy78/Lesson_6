@@ -23,7 +23,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
 
     @Test
     public void addProject() {
-
         ProjectBuilder project = ProjectBuilder.builder()
                 .name("Henadzy")
                 .typeOfProject(ProjectType.MULTIPLE.getProjectType())
@@ -44,7 +43,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
 
     @Test(dependsOnMethods = "addMilestone")
     public void getMilestones() {
-
         given()
                 .pathParam("project_id", projectID)
                 .when()
@@ -56,7 +54,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
 
     @Test(dependsOnMethods = "addProject")
     public void addMilestone() {
-
         MilestoneBuilder milestoneBuilder = MilestoneBuilder.builder()
                 .name("Henadzy_Milestone")
                 .description("Information about Milestone")
@@ -77,7 +74,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
 
     @Test(dependsOnMethods = "addMilestone")
     public void updateMilestone() {
-
         MilestoneBuilder updateMilestone = MilestoneBuilder.builder()
                 .name("New Milestone")
                 .description("About new Milestone")
@@ -101,7 +97,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
 
     @Test(dependsOnMethods = "updateMilestone")
     public void deleteMilestone() {
-
         given()
                 .pathParam("milestone_id", milestoneID)
                 .when()
@@ -113,7 +108,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
 
     @Test(dependsOnMethods = "deleteMilestone")
     public void addSuite() {
-
         SuiteBuilder suite = SuiteBuilder.builder()
                 .name("This is a new test suite")
                 .description("Use the description to add additional context details")
@@ -137,7 +131,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
 
     @Test(dependsOnMethods = "addSuite")
     public void addSection() {
-
         SectionBuilder section = SectionBuilder.builder()
                 .name("This is a new section")
                 .suite_id(suite_ID)
@@ -157,13 +150,10 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
                 .extract().jsonPath().get("id");
 
         System.out.println("ID of section: " + section_ID);
-
-
     }
 
     @Test(dependsOnMethods = "addSection")
     public void addCase() {
-
         CaseBuilder addCase = CaseBuilder.builder()
                 .title("This is a test case")
                 .typeID(12)
@@ -179,7 +169,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
                 .log().body()
                 .statusCode(HttpStatus.SC_OK)
                 .extract().jsonPath().get("id");
-
         System.out.println("ID of Case: " + case_ID);
 
         CaseBuilder actualCase = given()
@@ -196,7 +185,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
 
     @Test(dependsOnMethods = "addCase")
     public void getCase() {
-
         given()
                 .pathParam("case_id", case_ID)
                 .when()
@@ -208,7 +196,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
 
     @Test(dependsOnMethods = "getCase")
     public void updateCase() {
-
         CaseBuilder updateCase = CaseBuilder.builder()
                 .title("Update TestCase")
                 .typeID(5)
@@ -232,7 +219,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
 
     @Test (dependsOnMethods = "updateCase")
     public void moveCasesToSection(){
-
         given()
                 .pathParam("section_id", section_ID)
                 .body(String.format("{\n" +
@@ -250,7 +236,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
 
     @Test(dependsOnMethods = "moveCasesToSection")
     public void deleteCase(){
-
         given()
                 .pathParam("case_id", case_ID)
                 .when()
@@ -262,7 +247,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
 
     @Test(dependsOnMethods = "deleteCase")
     public void deleteProject(){
-
         given()
                 .pathParam("project_id", projectID)
                 .when()
