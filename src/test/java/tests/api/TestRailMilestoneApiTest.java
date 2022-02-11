@@ -14,7 +14,6 @@ import static org.hamcrest.Matchers.is;
 import static utils.Endpoints.*;
 
 public class TestRailMilestoneApiTest extends BaseApiTest {
-
     int projectID;
     int milestoneID;
     int suite_ID;
