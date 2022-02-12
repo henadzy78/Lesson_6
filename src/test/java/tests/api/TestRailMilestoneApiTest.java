@@ -40,17 +40,6 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
         System.out.println("ID of project: " + projectID);
     }
 
-    @Test(dependsOnMethods = "addMilestone")
-    public void getMilestones() {
-        given()
-                .pathParam("project_id", projectID)
-                .when()
-                .get(GET_MILESTONES)
-                .then()
-                .log().body()
-                .statusCode(HttpStatus.SC_OK);
-    }
-
     @Test(dependsOnMethods = "addProject")
     public void addMilestone() {
         MilestoneBuilder milestoneBuilder = MilestoneBuilder.builder()
@@ -69,6 +58,17 @@ public class TestRailMilestoneApiTest extends BaseApiTest {
                 .body("name", is(milestoneBuilder.getName()))
                 .body("description", is(milestoneBuilder.getDescription()))
                 .extract().jsonPath().get("id");
+    }
+
+    @Test(dependsOnMethods = "addMilestone")
+    public void getMilestones() {
+        given()
+                .pathParam("project_id", projectID)
+                .when()
+                .get(GET_MILESTONES)
+                .then()
+                .log().body()
+                .statusCode(HttpStatus.SC_OK);
     }
 
     @Test(dependsOnMethods = "addMilestone")
