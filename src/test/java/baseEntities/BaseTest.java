@@ -1,38 +1,45 @@
 package baseEntities;
 
-import core.BrowsersService;
-import core.ReadProperties;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
-import steps.MilestoneSteps;
-import steps.ProjectSteps;
-import utils.Listener;
-import utils.Waits;
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import core.DataBaseService;
+import io.qameta.allure.selenide.AllureSelenide;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
-@Listeners(Listener.class)
 public class BaseTest {
-    public WebDriver driver;
-    protected BrowsersService browsersService;
-    protected Waits waits;
-    protected ProjectSteps projectSteps;
-    protected MilestoneSteps milestoneSteps;
 
-    @BeforeClass
-    public void openPage() {
-        browsersService = new BrowsersService();
-        driver = browsersService.getDriver();
-        waits = new Waits(driver);
-        projectSteps = new ProjectSteps(driver);
-        milestoneSteps = new MilestoneSteps(driver);
+    protected String url = "https://qa1507.testrail.io";
+    protected String username = "atrostyanko+0401@gmail.com";
+    protected String password = "QqtRK9elseEfAk6ilYcJ";
+    protected DataBaseService dataBaseService;
 
-        driver.get(ReadProperties.getUrl());
+    @BeforeSuite
+    public void setupAllureReports() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
+                .screenshots(false)
+                .savePageSource(true)
+        );
+
+        org.apache.log4j.BasicConfigurator.configure();
+
+        Configuration.baseUrl = url;
+        Configuration.browser = "chrome";
+        //Configuration.startMaximized = true;
+
+    }
+    @BeforeTest
+    public void setupConnection() {
+        org.apache.log4j.BasicConfigurator.configure();
+
+        dataBaseService = new DataBaseService();
     }
 
-    @AfterClass
-    public void closePage() {
-        driver.quit();
+    @AfterTest
+    public void closeConnection() {
+        dataBaseService.closeConnection();
     }
 }
 

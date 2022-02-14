@@ -35,6 +35,7 @@ public class dbTests extends BaseDBTest {
             logger.error(e.toString());
         }
     }
+
     @Test
     public void secondTest() {
         CustomersTable customersTable = new CustomersTable(dataBaseService);
