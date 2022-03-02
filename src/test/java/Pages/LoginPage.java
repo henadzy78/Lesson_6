@@ -45,5 +45,4 @@ public class LoginPage extends BasePage {
         getPasswordField().sendKeys(ReadProperties.getPassword());
         getLoginButton().click();
     }
-
 }

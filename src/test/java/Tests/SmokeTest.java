@@ -12,16 +12,11 @@ import org.testng.annotations.Test;
 
 public class SmokeTest extends BaseTest {
 
-    //@Test
-    //public void loginTest() {
-       // LoginPage loginPage = new LoginPage(driver);
-        //loginPage.login(ReadProperties.getUsername(), ReadProperties.getPassword());
-
-        //loginPage.getEmailField().sendKeys(ReadProperties.getUsername());
-        //loginPage.getPasswordField().sendKeys(ReadProperties.getPassword());
-        //loginPage.getLoginButton().click();
-    //}
-
+    @Test
+    public void loginTest(){
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login(ReadProperties.getUsername(), ReadProperties.getPassword());
+    }
     @Test
     public void projectTest(){
         LoginPage loginPage = new LoginPage(driver);
@@ -37,10 +32,9 @@ public class SmokeTest extends BaseTest {
         loginPage.login(ReadProperties.getUsername(), ReadProperties.getPassword());
 
         AddProjectPage addProjectPage = new AddProjectPage(driver);
-        addProjectPage.startAddProject();
         addProjectPage.createProject(ReadProperties.getName(), ReadProperties.getAnnouncement());
-        WebElement resultMsg = driver.findElement(By.xpath("//div[@class='message message-success']"));
-        String actualMsg = resultMsg.getAttribute("innerText");
-        Assert.assertEquals(actualMsg, expectedMsg, "Проект не создан");
+        WebElement resultMsg = driver.findElement(By.cssSelector("div[class='message message-success']"));
+        String actualMsg = resultMsg.getText();
+        Assert.assertEquals(actualMsg, expectedMsg);
     }
 }
