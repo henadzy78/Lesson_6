@@ -27,6 +27,7 @@ public abstract class BasePage {
     }
 
     protected abstract void openPage();
+
     protected abstract boolean isPageOpened();
 
     protected void waitForOpen() {
