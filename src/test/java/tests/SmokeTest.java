@@ -1,5 +1,6 @@
 package tests;
 
+import models.User;
 import pages.DashboardPage;
 import pages.LoginPage;
 import baseEntities.BaseTest;
@@ -11,19 +12,16 @@ import utils.Retry;
 public class SmokeTest extends BaseTest {
 
     @Test
-    public void loginTest() throws InterruptedException {
-        LoginPage loginPage = new LoginPage(driver);
+    public void loginTest() {
+        User user = new User()
+                .setEmail(ReadProperties.getUsername())
+                .setPassword(ReadProperties.getPassword());
 
-        loginPage.getEmailField().sendKeys(ReadProperties.getUsername());
-        loginPage.getPasswordField().sendKeys(ReadProperties.getPassword());
-        loginPage.getLoginButton().click();
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login(user);
 
         DashboardPage dashboardPage = new DashboardPage(driver);
-        driver.get("https://1511.testrail.io/index.php?/admin/overview");
-
-        dashboardPage = new DashboardPage(driver, true);
         Assert.assertTrue(dashboardPage.getAddProjectButton().isDisplayed());
-        //Thread.sleep(5000);
     }
 
     @Test (retryAnalyzer = Retry.class)
