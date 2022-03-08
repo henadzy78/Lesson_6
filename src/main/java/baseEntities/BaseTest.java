@@ -3,9 +3,7 @@ package baseEntities;
 import core.BrowsersService;
 import core.ReadProperties;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
+import org.testng.annotations.*;
 import utils.Listener;
 import utils.Waits;
 
@@ -16,7 +14,7 @@ public class BaseTest {
     protected BrowsersService browsersService;
     protected Waits waits;
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() {
         browsersService = new BrowsersService();
         driver = browsersService.getDriver();
@@ -25,7 +23,7 @@ public class BaseTest {
         driver.get(ReadProperties.getUrl());
     }
 
-    @AfterMethod
+    @AfterClass
     public void tearDown() {
         driver.quit();
     }
