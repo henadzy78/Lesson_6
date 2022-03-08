@@ -41,6 +41,4 @@ public class SmokeTest extends BaseTest {
 
         Assert.assertTrue(dashboardPage.getAddProjectButton().isDisplayed());
     }
-
-
 }
