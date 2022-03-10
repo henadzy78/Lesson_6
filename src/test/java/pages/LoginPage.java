@@ -1,7 +1,6 @@
 package pages;
 
 import baseEntities.BasePage;
-import core.ReadProperties;
 import models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
