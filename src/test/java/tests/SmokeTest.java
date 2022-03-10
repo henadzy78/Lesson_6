@@ -4,6 +4,7 @@ import baseEntities.BaseTest;
 import core.ReadProperties;
 import models.Project;
 import models.User;
+import models.UserBuilder;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.DashboardPage;
@@ -52,5 +53,19 @@ public class SmokeTest extends BaseTest {
         updateProject = new Project();
         updateProject.setName(Randomization.getRandomString(8));
         updateProject.setTypeOfProject(Randomization.getRandomType());
+    }
+
+    @Test
+    public void loginTestWithBuilder() {
+        UserBuilder user = new UserBuilder.Builder()
+                .withEmail(ReadProperties.getUsername())
+                .withPassword(ReadProperties.getPassword())
+                .build();
+
+        LoginPage loginPage = new LoginPage(driver);
+        //loginPage.login(user);
+
+        DashboardPage dashboardPage = new DashboardPage(driver);
+        Assert.assertTrue(dashboardPage.getAddProjectButton().isDisplayed());
     }
 }
