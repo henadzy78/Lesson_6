@@ -9,7 +9,45 @@ public class Project {
     private ProjectType typeOfProject;
     private boolean isCompleted;
 
-    public Project() {
+    public static class BuilderProject {
+        private Project newProject;
+
+        public static class Builder {
+            private Project newProject;
+
+            public Builder() {
+                newProject = new Project();
+            }
+
+            public Builder withName(String name) {
+                newProject.name = name;
+                return this;
+            }
+
+            public Builder withAnnouncement(String announcement) {
+                newProject.announcement = announcement;
+                return this;
+            }
+
+            public Builder withIsShowAnnouncement(boolean isShowAnnouncement) {
+                newProject.isShowAnnouncement = isShowAnnouncement;
+                return this;
+            }
+
+            public Builder withTypeOfProject(ProjectType typeOfProject) {
+                newProject.typeOfProject = typeOfProject;
+                return this;
+            }
+
+            public Builder withIsCompleted(boolean isCompleted) {
+                newProject.isCompleted = isCompleted;
+                return this;
+            }
+
+            public Project build() {
+                return newProject;
+            }
+        }
     }
 
     public String getName() {

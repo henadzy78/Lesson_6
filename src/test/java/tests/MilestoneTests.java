@@ -16,7 +16,7 @@ public class MilestoneTests extends BaseTest {
         Milestone milestone = new Milestone();
 
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login(user);
+        //loginPage.login(user);
 
         projectSteps.addProject(project);
         milestoneSteps.createMilestone(project, milestone);

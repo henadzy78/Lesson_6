@@ -44,9 +44,32 @@ public class LoginPage extends BasePage {
     }
 
     // Реализаци базовых методов
-    public void login(User user) {
+    public void populateFields(String email, String psw) {
+        getEmailField().sendKeys(email);
+        getPasswordField().sendKeys(psw);
+        getLoginButton().click();
+    }
+
+    public void login(String email, String psw){
+        populateFields(email, psw);
+        getLoginButton().click();
+    }
+
+    public void loginWithValue(User user){
         getEmailField().sendKeys(user.getEmail());
         getPasswordField().sendKeys(user.getPassword());
         getLoginButton().click();
+    }
+
+    public DashboardPage successLogin(String email, String psw){
+        populateFields(email, psw);
+        getLoginButton().click();
+        return new DashboardPage(driver);
+    }
+
+    public LoginPage incorrectLogin(String email, String psw){
+        populateFields(email, psw);
+        getLoginButton().click();
+        return new LoginPage(driver);
     }
 }

@@ -11,18 +11,16 @@ import pages.LoginPage;
 import utils.Randomization;
 import utils.Retry;
 
-public class SmokeTest extends BaseTest {
+public class LoginTest extends BaseTest {
     Project addProject;
     Project updateProject;
 
     @Test
     public void loginTest() {
-        User user = new User()
-                .setEmail(ReadProperties.getUsername())
-                .setPassword(ReadProperties.getPassword());
-
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login(user);
+        loginPage.getEmailField().sendKeys(ReadProperties.getUsername());
+        loginPage.getPasswordField().sendKeys(ReadProperties.getPassword());
+        loginPage.getLoginButton().click();
 
         DashboardPage dashboardPage = new DashboardPage(driver);
         Assert.assertTrue(dashboardPage.getAddProjectButton().isDisplayed());
