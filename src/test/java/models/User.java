@@ -4,7 +4,6 @@ public class User {
     private String email;
     private String password;
 
-
     public static class BuilderUser {
         private Project newProject;
 
@@ -28,7 +27,6 @@ public class User {
             public User build() {
                 return newUser;
             }
-
         }
     }
 
@@ -39,5 +37,4 @@ public class User {
     public String getPassword() {
         return password;
     }
-
 }

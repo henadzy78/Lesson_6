@@ -26,7 +26,7 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(dashboardPage.getAddProjectButton().isDisplayed());
     }
 
-    @Test (retryAnalyzer = Retry.class)
+    @Test(retryAnalyzer = Retry.class)
     public void flakyLoginTest() {
         LoginPage loginPage = new LoginPage(driver);
 
@@ -50,5 +50,12 @@ public class LoginTest extends BaseTest {
         updateProject = new Project();
         updateProject.setName(Randomization.getRandomString(8));
         updateProject.setTypeOfProject(Randomization.getRandomType());
+    }
+
+    @Test
+    public void chainTest() {
+        Assert.assertTrue(new LoginPage(driver).successLogin(ReadProperties.getUsername(),
+                        ReadProperties.getPassword())
+                .getAddProjectButton().isDisplayed());
     }
 }

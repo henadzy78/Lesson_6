@@ -7,13 +7,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
+
     private static String ENDPOINT = "/auth/login";
     // Описание элементов страницы
     private static final By PAGE_OPENED_IDENTIFIER = By.id("button_primary");
 
-    private By email_Selector = By.id("name");
-    private By password_Selector = By.id("password");
-    private By login_Selector = By.id("button_primary");
+    protected By email_Selector = By.id("name");
+    protected By password_Selector = By.id("password");
+    protected By login_Selector = By.id("button_primary");
 
     // Конструктор страницы
     public LoginPage(WebDriver driver) {

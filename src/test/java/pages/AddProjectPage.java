@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class AddProjectPage extends BasePage {
+
     private static String ENDPOINT = "/admin/projects/add/1";
     private static final By PAGE_OPENED_IDENTIFIER = By.id("accept");
     private static String typeRadioButtonSelector = "//*[@name = 'suite_mode' and @value='replace']";
@@ -15,6 +16,7 @@ public class AddProjectPage extends BasePage {
     private By showAnnouncement_Selector = By.id("show_announcement");
     private By addProjectButton_Selector = By.id("accept");
     private By successfullyAddedMessage_Selector = By.cssSelector(".message-success");
+    private By saveProjectButton_Selector = By.id("accept");
 
     public AddProjectPage(WebDriver driver) {super(driver);
     }
@@ -42,8 +44,10 @@ public class AddProjectPage extends BasePage {
 
     public WebElement findAnyProjectInProjects(String nameProject) {return driver.findElement(By.xpath("//a[contains(@href, 'index.php?/admin/projects/edit/') and text()='\" + nameProject + \"']"));}
 
-    public WebElement getSuccessfullyMessage(){return driver.findElement(successfullyAddedMessage_Selector);
-    }
+    public WebElement getSuccessfullyMessage(){return driver.findElement(successfullyAddedMessage_Selector);}
+
+    public WebElement getSaveProjectButton(){return driver.findElement(saveProjectButton_Selector);}
+
     public void setType(ProjectType type) {
         driver.findElement(By.xpath(typeRadioButtonSelector.replace("replace", String.valueOf(type))));
     }

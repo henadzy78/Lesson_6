@@ -11,6 +11,7 @@ public class MainProjectsPage extends BasePage {
     private static final By PAGE_OPENED_IDENTIFIER = By.xpath("//a[@onclick='this.blur(); App.Admin.addExampleProject(); return false;']");
     private By successfullyAddProjectMessage_Selector = By.xpath("//*[text() = 'Successfully added the new project.']");
     private By addProjectButton_Selector = By.xpath("//*[contains(text(),'Add Project')]");
+    private By successfullyForDeleteProject_Selector = By.xpath("//div[text()='Successfully deleted the project.']");
 
 
 
@@ -38,4 +39,15 @@ public class MainProjectsPage extends BasePage {
     public WebElement findAnyProjectInDashboard(String nameProject) {
         return driver.findElement(By.xpath(String.format("//a[contains(@href,'index.php?/admin/projects/') and text()='%s']", nameProject)));
     }
+
+    public WebElement findAnyProjectInProject(String nameProject) {
+        return driver.findElement(By.xpath("//a[contains(@href, 'index.php?/admin/projects/edit/') and text()='" + nameProject + "']"));
+    }
+    public WebElement getDeleteButtonAnyProject(String nameProject) {
+        return driver.findElement(By.cssSelector("a[onclick*='" + nameProject + "'] .icon-small-delete"));
+    }
+    public WebElement getSuccessfullyMessageAboutDeleteProject(){
+        return driver.findElement(successfullyForDeleteProject_Selector);
+    }
+
 }
