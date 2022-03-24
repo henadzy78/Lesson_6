@@ -1,4 +1,4 @@
-package baseEntities;
+package baseEntity;
 
 import core.ReadProperties;
 import io.restassured.RestAssured;
@@ -15,7 +15,7 @@ public class BaseApiTest {
         // Setup RestAssured
         RestAssured.baseURI = ReadProperties.getUrl();
 
-        // Setup Request Object
+        // Setup request Object
         RestAssured.requestSpecification = given()
                 .header(HTTP.CONTENT_TYPE, ContentType.JSON)
                 .auth().preemptive().basic(ReadProperties.getUsername(), ReadProperties.getPassword());

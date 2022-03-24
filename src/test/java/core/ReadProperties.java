@@ -21,7 +21,7 @@ public class ReadProperties {
     }
 
     public static String getBrowserName() {
-        return properties.getProperty("browserType");
+        return properties.getProperty("browser");
     }
 
     public static String getUsername() {
@@ -38,9 +38,5 @@ public class ReadProperties {
 
     public static int getTimeOut() {
         return Integer.parseInt(properties.getProperty("timeout"));
-    }
-
-    public static boolean getHeadless() {
-        return properties.getProperty("headless").equalsIgnoreCase("true");
     }
 }

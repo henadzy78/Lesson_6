@@ -1,6 +1,6 @@
 package tests.gui;
 
-import baseEntities.BaseTest;
+import baseEntity.BaseTest;
 import core.ReadProperties;
 import models.Project;
 import models.User;

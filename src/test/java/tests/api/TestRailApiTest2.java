@@ -1,6 +1,6 @@
 package tests.api;
 
-import baseEntities.BaseApiTest;
+import baseEntity.BaseApiTest;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import io.restassured.response.Response;
@@ -42,7 +42,7 @@ public class TestRailApiTest2 extends BaseApiTest {
 
     @Test
     public void getUser() {
-        int userId = 1;
+        int userID = 1;
 
         User expectedUser = User.builder()
                 .name("Alex Tros")
@@ -53,10 +53,9 @@ public class TestRailApiTest2 extends BaseApiTest {
                 .build();
 
         User actualUser = given()
-                .pathParam("id", userId)
+                .pathParam("id", userID)
                 .get(Endpoints.GET_USER)
                 .then()
-                .log().body()
                 .assertThat()
                 .statusCode(HttpStatus.SC_OK)
                 .extract()
@@ -67,7 +66,7 @@ public class TestRailApiTest2 extends BaseApiTest {
 
     @Test
     public void getUser1() {
-        int userId = 1;
+        int userID = 1;
         Gson gson = new Gson();
 
         User expectedUser = User.builder()
@@ -79,10 +78,11 @@ public class TestRailApiTest2 extends BaseApiTest {
                 .build();
 
         Response response = given()
-                .pathParam("id", userId)
+                .pathParam("id", userID)
                 .get(Endpoints.GET_USER);
 
         User actualUser = gson.fromJson(response.getBody().asString(), User.class);
+
         Assert.assertEquals(actualUser, expectedUser);
     }
 
@@ -121,14 +121,14 @@ public class TestRailApiTest2 extends BaseApiTest {
         Response response = given()
                 .get(Endpoints.GET_ALL_USERS);
 
-        Type listType = new TypeToken<ArrayList<User>>() {}.getType();
-        List<User> actualUserList = gson.fromJson(response.getBody().asString(), listType);
+        Type listType = new TypeToken<ArrayList<User>>() {
+        }.getType();
+        List<User> actualUsersList = gson.fromJson(response.getBody().asString(), listType);
 
-        //User[] actualUser = gson.fromJson(response.getBody().asString(), User[].class);
-        //Assert.assertEquals(actualUser[0], expectedUser);
-
-        Assert.assertEquals(actualUserList.get(0), expectedUser);
-
+/*
+        User[] actualUser = gson.fromJson(response.getBody().asString(), User[].class);
+        Assert.assertEquals(actualUser[0], expectedUser);
+*/
+        Assert.assertEquals(actualUsersList.get(0), expectedUser);
     }
-
 }
