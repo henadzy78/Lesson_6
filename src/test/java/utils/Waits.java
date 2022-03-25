@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public final class Waits {
     private WebDriver driver;
     private WebDriverWait wait;
+    private WebElement webElement;
 
     public Waits(WebDriver driver) {
         this.driver = driver;
@@ -33,4 +34,8 @@ public final class Waits {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
+
+    public WebElement waitForClickable(WebElement webElement) {
+        return wait.until(ExpectedConditions.elementToBeClickable(webElement));
+    }
 }
